@@ -1,0 +1,178 @@
+---
+title: Apple Pay
+description: Apple Pay integration
+---
+
+# Wallets - Apple Pay
+
+This doc describes step by step how to integrate the Apple Pay capability for your App.
+
+# 1. Register for a merchant ID on the apple develop portal.
+
+Login at the [Apple developer portal](https://developer.apple.com/account/resources/identifiers/add/merchant). Fill in the form and create an identifier, most common is sth like `merchan.com.<appname>`.
+
+# 2. Create certificate and upload to Stripe dashboard.
+
+On the same Apple developer portal create a certificate for the merchant id, the certificate needs to be of type `Apple Pay Payment Processing`.
+After that upload the certifacte to your Stripe instance: https://dashboard.stripe.com/settings/payments/apple_pay .
+
+# 3. Add Apple pay capability in Xcode.
+
+Open the iOS folder of your app in Xcode and select the runner target. Then go to `signing and capabilities` and add `Apple pay`. Sometimes you need to login with your Apple developer id and after that select your merchant id.
+
+![Apple pay Xcode](./assets/apple_pay_xcode.png).
+
+# 4. Configure the merchant id in Flutter.
+
+Use the Flutter Stripe library to add your merchant id
+
+```dart
+Stripe.merchantIdentifier = 'merchant.flutter.stripe.test';
+await Stripe.instance.applySettings();
+```
+
+# 5. Check if Apple pay is available
+
+It is recommended to check if Apple Pay is available before offering the possibility to pay with this wallet. The function below checks whether Apple Pay is enabled on the device and a card is added to the wallet.
+
+You can either listen to Apple pay support updates like:
+
+``` dart
+Stripe.instance.isApplePaySupported.addListener(update);
+...
+// get the value
+Stripe.instance.isApplePaySupported.value;
+```
+
+or you can request it directly:
+
+``` dart
+await Stripe.instance.checkApplePaySupport();
+```
+
+# 6. Integrate Apple pay in the UI
+
+## Option A PaymentSheet.
+
+The payment sheet is the easiest way of integrating apple pay. It is just add an `PaymentSheetApplePay` object to the PaymentSheet.
+
+``` dart
+Stripe.instance.initPaymentSheet(
+    paymentSheetParameters: SetupPaymentSheetParameters(
+    paymentIntentClientSecret: data['paymentIntent'],
+    applePay: PaymentSheetApplePay(
+      merchantCountryCode: 'DE',
+      paymentSummaryItems: [
+        ApplePayCartSummaryItem.immediate(
+          label: 'Test',
+          amount: '20',
+        ),
+      ],
+    ),
+);
+```
+
+## Option B Native integration
+
+This option is a bit more advanced but offers more flexibility. 
+
+First add an Apple  to the UI, Apple requires the button to comply to their branding guidelines. Luckily this library offers a built in [ApplePayButton](https://pub.dev/documentation/flutter_stripe/latest/flutter_stripe/ApplePayButton-class.html) widget.
+
+```dart
+ApplePayButton(
+    cornerRadius: 4.0,
+    type: ApplePayButtonType.buy,
+    onPressed: _handlePayPress,
+);
+```
+
+After that handle the  Apple pay.
+
+```dart 
+Future<void> _handlePayPress() async {
+try {
+    // 1. Present Apple Pay sheet
+    await Stripe.instance.presentApplePay(
+        ApplePayPresentParams(
+        cartItems: [
+            ApplePayCartSummaryItem.immediate(
+            label: 'Product Test',
+            amount: '0.01',
+            ),
+        ],
+        country: 'Es',
+        currency: 'EUR',
+    ),
+    );
+
+    // 2. fetch Intent Client Secret from backend
+    final response = await fetchPaymentIntentClientSecret();
+    final clientSecret = response['clientSecret'];
+
+    // 3. Confirm apple pay payment
+    await Stripe.instance.confirmApplePayPayment(clientSecret);
+    ScaffoldMessenger.of(context).showSnackBar(
+    const SnackBar(
+        content: Text('Apple Pay payment succesfully completed')),
+        );
+} catch (e) {
+    ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Error: $e')),
+      );
+    }
+  }
+```
+
+# 7. Optional recurring and defferred payment methods 
+
+As of iOS16 it is possible to use deferred payment methods. From version 4.0.0 this library support both deferred as recurring payments.
+
+## Deferred payment
+
+Adding support for a deferred payment is as simply as adding a deferred summary item to presentApplePay method.
+
+```dart
+await Stripe.instance.presentApplePay(
+  ApplePayPresentParams(
+    cartItems: [
+      ApplePayCartSummaryItem.deferred(
+        label: 'Product Test',
+        amount: '0.01',
+        deferredDate: 1658478986
+      ),
+    ],
+    country: 'Es',
+    currency: 'EUR',
+  ),
+);
+```
+
+## Recurring payment
+
+Adding support for a recurring payment is as simply as adding a recurring summary item to presentApplePay method.
+
+```dart
+await Stripe.instance.presentApplePay(
+  ApplePayPresentParams(
+    cartItems: [
+      ApplePayCartSummaryItem.recurring(
+        label: 'Product Test',
+        amount: '0.01',
+        intervalCount: 2,
+        intervalUnit: ApplePayIntervalUnit.month,
+        startDate: 1658478986,
+        number: 1
+      ),
+    ],
+    country: 'Es',
+    currency: 'EUR',
+  ),
+);
+```
+
+# Testing
+It is not possible to use the Stripe test cards in Apple pay. However when you use a test publishable key Stripe automatically detects this and returns a test token back.
+
+# Trouble shooting
+In case you receive errors when the Stripe API is creating a token, it possibly has to do with an issue with your certificate and you need to repeat step 1 and 2 of this guide again.
+

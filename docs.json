@@ -10,6 +10,10 @@
           ["CardFormField", "/card_field"]
           ]      
         ],
+        ["Wallets", [
+            ["Apple Pay", "/apple_pay"]
+          ]
+        ],
         ["Regional payments", [
             ["ACH direct debit", "/ach"],
             ["Ideal", "/ideal"]

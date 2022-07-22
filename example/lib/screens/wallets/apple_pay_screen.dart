@@ -21,7 +21,7 @@ class _ApplePayScreenState extends State<ApplePayScreen> {
 
   @override
   void dispose() {
-    Stripe.instance.isApplePaySupported.removeListener(update);
+    Stripe.instance.isApplePaySupported.removeListener((update));
     super.dispose();
   }
 
@@ -38,6 +38,8 @@ class _ApplePayScreenState extends State<ApplePayScreen> {
       children: [
         if (Stripe.instance.isApplePaySupported.value)
           ApplePayButton(
+            cornerRadius: 4.0,
+            type: ApplePayButtonType.buy,
             onPressed: _handlePayPress,
           )
         else
