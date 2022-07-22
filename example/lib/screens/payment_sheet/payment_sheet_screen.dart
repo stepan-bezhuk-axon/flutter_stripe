@@ -96,6 +96,12 @@ class _PaymentSheetScreenState extends State<PaymentSheetScreen> {
           // Extra params
           applePay: PaymentSheetApplePay(
             merchantCountryCode: 'DE',
+            paymentSummaryItems: [
+              ApplePayCartSummaryItem.immediate(
+                label: 'Test',
+                amount: '20',
+              ),
+            ],
           ),
           googlePay: PaymentSheetGooglePay(
             merchantCountryCode: 'DE',

@@ -100,9 +100,19 @@ Future<void> initPaymentSheet() async {
           customerEphemeralKeySecret: data['ephemeralKey'],
           customerId: data['customer'],
           // Extra options
-          testEnv: true,
-          applePay: true,
-          googlePay: true,
+          applePay: PaymentSheetApplePay(
+            merchantCountryCode: 'DE',
+            paymentSummaryItems: [
+              ApplePayCartSummaryItem.immediate(
+                label: 'Test',
+                amount: '20',
+              ),
+            ],
+          ),
+          googlePay: PaymentSheetGooglePay(
+            merchantCountryCode: 'DE',
+            testEnv: true,
+          ),
           style: ThemeMode.dark,
           merchantCountryCode: 'DE',
         ),
@@ -169,16 +179,21 @@ Add the Apple Pay capability to your app. In Xcode, open your project settings, 
 <img src="https://b.stripecdn.com/docs/assets/xcode.a05220aeae26f8b793b5694692a79117.png" height="36" />
 
 ####  Add Apple Pay
-To add Apple Pay to PaymentSheet, set `applePay: true`  with your Apple merchant ID and the country code of your business.
+To add Apple Pay to PaymentSheet, add an `PaymentSheetApplePay` parameter with your Apple merchant ID and the country code of your business.
  
 ```dart
 Stripe.instance.initPaymentSheet(
-  paymentSheetParameters: SetupPaymentSheetParameters(
-    merchantDisplayName: 'Flutter Stripe Store Demo',
-    //...
-    merchantId: "merchant.com.your_app_name",
-    merchantCountryCode: "US
-  ),
+    paymentSheetParameters: SetupPaymentSheetParameters(
+    paymentIntentClientSecret: data['paymentIntent'],
+    applePay: PaymentSheetApplePay(
+      merchantCountryCode: 'DE',
+      paymentSummaryItems: [
+        ApplePayCartSummaryItem.immediate(
+          label: 'Test',
+          amount: '20',
+        ),
+      ],
+    ),
 );
 ```
 
