@@ -27,7 +27,7 @@ dependencies:
       ref: fox-dev
       path: packages/stripe_android
 
-    stripe_ios:
+  stripe_ios:
     git:
       url: https://github.com/stepan-bezhuk-axon/flutter_stripe.git
       ref: fox-dev
