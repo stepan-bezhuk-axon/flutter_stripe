@@ -25,13 +25,13 @@ dependencies:
     git:
       url: https://github.com/stepan-bezhuk-axon/flutter_stripe.git
       ref: fox-dev
-      patch: packages/stripe_android
+      path: packages/stripe_android
 
     stripe_ios:
     git:
       url: https://github.com/stepan-bezhuk-axon/flutter_stripe.git
       ref: fox-dev
-      patch: packages/stripe_ios
+      path: packages/stripe_ios
 
   stripe_platform_interface: ^6.0.0
 dev_dependencies:
