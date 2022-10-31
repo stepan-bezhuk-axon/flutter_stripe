@@ -546,9 +546,7 @@ class _$_PaymentMethod implements _PaymentMethod {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodToJson(
-      this,
-    );
+    return _$$_PaymentMethodToJson(this);
   }
 }
 
@@ -584,68 +582,68 @@ abstract class _PaymentMethod implements PaymentMethod {
   @override
 
   /// Unique identifier.
-  String get id;
+  String get id => throw _privateConstructorUsedError;
   @override
 
   /// Whether or not the object exists in livemode.
-  bool get livemode;
+  bool get livemode => throw _privateConstructorUsedError;
   @override
 
   /// The type of the paymentmethod.
-  String get paymentMethodType;
+  String get paymentMethodType => throw _privateConstructorUsedError;
   @override
 
   /// Billing information related to the payment method.
-  BillingDetails get billingDetails;
+  BillingDetails get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Containing additional data in case paymentmethod type is card.
   @JsonKey(name: 'Card')
-  Card get card;
+  Card get card => throw _privateConstructorUsedError;
   @override
 
   /// Containing additional data in case paymentmethod type is sepa.
   @JsonKey(name: 'SepaDebit')
-  SepaDebit get sepaDebit;
+  SepaDebit get sepaDebit => throw _privateConstructorUsedError;
   @override
 
   /// Containing additional data in case paymentmethod type is Bacs debit.
   @JsonKey(name: 'BacsDebit')
-  BacsDebit get bacsDebit;
+  BacsDebit get bacsDebit => throw _privateConstructorUsedError;
   @override
 
   /// Containing additional data in case paymentmethod type is Aubecs debit.
   @JsonKey(name: 'AuBecsDebit')
-  AuBecsDebit get auBecsDebit;
+  AuBecsDebit get auBecsDebit => throw _privateConstructorUsedError;
   @override
 
   /// Containing additional data in case paymentmethod type is sofort.
   @JsonKey(name: 'Sofort')
-  Sofort get sofort;
+  Sofort get sofort => throw _privateConstructorUsedError;
   @override
 
   /// Containing additional data in case paymentmethod type is Ideal.
   @JsonKey(name: 'Ideal')
-  Ideal get ideal;
+  Ideal get ideal => throw _privateConstructorUsedError;
   @override
 
   /// Containing additional data in case paymentmethod type is FPX.
   @JsonKey(name: 'Fpx')
-  Fpx get fpx;
+  Fpx get fpx => throw _privateConstructorUsedError;
   @override
 
   /// Containing additional data in case paymentmethod type is UPI.
   @JsonKey(name: 'Upi')
-  Upi get upi;
+  Upi get upi => throw _privateConstructorUsedError;
   @override
 
   /// Containing additional data in case paymentmethod type is UPI.
   @JsonKey(name: 'USBankAccount')
-  UsBankAccount get usBankAccount;
+  UsBankAccount get usBankAccount => throw _privateConstructorUsedError;
   @override
 
   /// Id related to the customer to which this paymentmethod has been saved.
-  String? get customerId;
+  String? get customerId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodCopyWith<_$_PaymentMethod> get copyWith =>
@@ -843,9 +841,7 @@ class _$_BillingDetails implements _BillingDetails {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BillingDetailsToJson(
-      this,
-    );
+    return _$$_BillingDetailsToJson(this);
   }
 }
 
@@ -862,19 +858,19 @@ abstract class _BillingDetails implements BillingDetails {
   @override
 
   /// Email address.
-  String? get email;
+  String? get email => throw _privateConstructorUsedError;
   @override
 
   /// Billing address.
-  Address? get address;
+  Address? get address => throw _privateConstructorUsedError;
   @override
 
   /// Billing phone number.
-  String? get phone;
+  String? get phone => throw _privateConstructorUsedError;
   @override
 
   /// Full name.
-  String? get name;
+  String? get name => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_BillingDetailsCopyWith<_$_BillingDetails> get copyWith =>
@@ -1036,9 +1032,7 @@ class _$_AuBecsDebit implements _AuBecsDebit {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AuBecsDebitToJson(
-      this,
-    );
+    return _$$_AuBecsDebitToJson(this);
   }
 }
 
@@ -1054,15 +1048,15 @@ abstract class _AuBecsDebit implements AuBecsDebit {
   @override
 
   /// Unique identifier for the bankaccount.
-  String? get fingerprint;
+  String? get fingerprint => throw _privateConstructorUsedError;
   @override
 
   /// Last 4 digits of the bankaccount number.
-  String? get last4;
+  String? get last4 => throw _privateConstructorUsedError;
   @override
 
   /// Six digit number identifying the bank or branch for this account.
-  String? get bsbNumber;
+  String? get bsbNumber => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_AuBecsDebitCopyWith<_$_AuBecsDebit> get copyWith =>
@@ -1222,9 +1216,7 @@ class _$_BacsDebit implements _BacsDebit {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BacsDebitToJson(
-      this,
-    );
+    return _$$_BacsDebitToJson(this);
   }
 }
 
@@ -1240,15 +1232,15 @@ abstract class _BacsDebit implements BacsDebit {
   @override
 
   /// Sort code of the bankaccount.
-  String? get sortCode;
+  String? get sortCode => throw _privateConstructorUsedError;
   @override
 
   /// Unique identifier for the bankaccount.
-  String? get fingerprint;
+  String? get fingerprint => throw _privateConstructorUsedError;
   @override
 
   /// Last 4 digits of the bank account.
-  String? get last4;
+  String? get last4 => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_BacsDebitCopyWith<_$_BacsDebit> get copyWith =>
@@ -1478,9 +1470,7 @@ class _$_Card implements _Card {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CardToJson(
-      this,
-    );
+    return _$$_CardToJson(this);
   }
 }
 
@@ -1498,27 +1488,27 @@ abstract class _Card implements Card {
   @override
 
   /// The brand associated to the card e.g. (visa, amex).
-  String? get brand;
+  String? get brand => throw _privateConstructorUsedError;
   @override
 
   /// Two letter iso code.
-  String? get country;
+  String? get country => throw _privateConstructorUsedError;
   @override
 
   /// four digit number representing the year of expiry of the card.
-  int? get expYear;
+  int? get expYear => throw _privateConstructorUsedError;
   @override
 
   /// two digit number representing the month of expire of the card.
-  int? get expMonth;
+  int? get expMonth => throw _privateConstructorUsedError;
   @override
 
   /// card funding type e.g. (credit, debit).
-  String? get funding;
+  String? get funding => throw _privateConstructorUsedError;
   @override
 
   /// last four digits of the card.
-  String? get last4;
+  String? get last4 => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_CardCopyWith<_$_Card> get copyWith => throw _privateConstructorUsedError;
@@ -1654,9 +1644,7 @@ class _$_Fpx implements _Fpx {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FpxToJson(
-      this,
-    );
+    return _$$_FpxToJson(this);
   }
 }
 
@@ -1669,11 +1657,11 @@ abstract class _Fpx implements Fpx {
   @override
 
   /// the customer bank
-  String? get bank;
+  String? get bank => throw _privateConstructorUsedError;
   @override
 
   /// accountholder type
-  String? get accountHolderType;
+  String? get accountHolderType => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_FpxCopyWith<_$_Fpx> get copyWith => throw _privateConstructorUsedError;
@@ -1810,9 +1798,7 @@ class _$_Ideal implements _Ideal {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_IdealToJson(
-      this,
-    );
+    return _$$_IdealToJson(this);
   }
 }
 
@@ -1825,11 +1811,11 @@ abstract class _Ideal implements Ideal {
   @override
 
   /// The BIC code of the bank
-  String? get bankIdentifierCode;
+  String? get bankIdentifierCode => throw _privateConstructorUsedError;
   @override
 
   /// The bank of the customer
-  String? get bank;
+  String? get bank => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_IdealCopyWith<_$_Ideal> get copyWith =>
@@ -2011,9 +1997,7 @@ class _$_SepaDebit implements _SepaDebit {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SepaDebitToJson(
-      this,
-    );
+    return _$$_SepaDebitToJson(this);
   }
 }
 
@@ -2030,19 +2014,19 @@ abstract class _SepaDebit implements SepaDebit {
   @override
 
   /// Two letter ISO code representing the country of the bank account.
-  String? get country;
+  String? get country => throw _privateConstructorUsedError;
   @override
 
   /// Bank code associated with the bankaccount.
-  String? get bankCode;
+  String? get bankCode => throw _privateConstructorUsedError;
   @override
 
   /// Unique ID for the bank account.
-  String? get fingerprint;
+  String? get fingerprint => throw _privateConstructorUsedError;
   @override
 
   /// Last four characters of IBAN.
-  String? get last4;
+  String? get last4 => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_SepaDebitCopyWith<_$_SepaDebit> get copyWith =>
@@ -2159,9 +2143,7 @@ class _$_Sofort implements _Sofort {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SofortToJson(
-      this,
-    );
+    return _$$_SofortToJson(this);
   }
 }
 
@@ -2173,7 +2155,7 @@ abstract class _Sofort implements Sofort {
   @override
 
   /// Two letter ISO code representing the country of the bank account.
-  String? get country;
+  String? get country => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_SofortCopyWith<_$_Sofort> get copyWith =>
@@ -2289,9 +2271,7 @@ class _$_Upi implements _Upi {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UpiToJson(
-      this,
-    );
+    return _$$_UpiToJson(this);
   }
 }
 
@@ -2303,7 +2283,7 @@ abstract class _Upi implements Upi {
   @override
 
   /// The customer's vpa.
-  String? get vpa;
+  String? get vpa => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_UpiCopyWith<_$_Upi> get copyWith => throw _privateConstructorUsedError;
@@ -2632,9 +2612,7 @@ class _$_UsBankAccount implements _UsBankAccount {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_UsBankAccountToJson(
-      this,
-    );
+    return _$$_UsBankAccountToJson(this);
   }
 }
 
@@ -2656,39 +2634,40 @@ abstract class _UsBankAccount implements UsBankAccount {
   @override
 
   /// Routing number of the bank account
-  String? get routingNumber;
+  String? get routingNumber => throw _privateConstructorUsedError;
   @override
 
   /// Last 4  digits of the account
-  String? get last4;
+  String? get last4 => throw _privateConstructorUsedError;
   @override
 
   /// The bank account type of the holder
-  BankAccountHolderType get accountHolderType;
+  BankAccountHolderType get accountHolderType =>
+      throw _privateConstructorUsedError;
   @override
 
   /// The account type
-  UsBankAccountType get accountType;
+  UsBankAccountType get accountType => throw _privateConstructorUsedError;
   @override
 
   /// The name of the bank of the account
-  String? get bankName;
+  String? get bankName => throw _privateConstructorUsedError;
   @override
 
   /// Unique identifier for the bankaccount.
-  String? get fingerprint;
+  String? get fingerprint => throw _privateConstructorUsedError;
   @override
 
   /// Number of linkedaccount
-  String? get linkedAccount;
+  String? get linkedAccount => throw _privateConstructorUsedError;
   @override
 
   /// list of preferred network names
-  List<String>? get preferredNetworks;
+  List<String>? get preferredNetworks => throw _privateConstructorUsedError;
   @override
 
   /// list of preferred network names
-  List<String>? get supportedNetworks;
+  List<String>? get supportedNetworks => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_UsBankAccountCopyWith<_$_UsBankAccount> get copyWith =>
@@ -2751,10 +2730,14 @@ PaymentMethodParams _$PaymentMethodParamsFromJson(Map<String, dynamic> json) {
 mixin _$PaymentMethodParams {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -2774,16 +2757,21 @@ mixin _$PaymentMethodParams {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -2802,15 +2790,21 @@ mixin _$PaymentMethodParams {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -2829,7 +2823,9 @@ mixin _$PaymentMethodParams {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -2939,9 +2935,11 @@ abstract class _$$_PaymentMethodParamsCardCopyWith<$Res> {
   factory _$$_PaymentMethodParamsCardCopyWith(_$_PaymentMethodParamsCard value,
           $Res Function(_$_PaymentMethodParamsCard) then) =
       __$$_PaymentMethodParamsCardCopyWithImpl<$Res>;
-  $Res call({PaymentMethodData paymentMethodData});
+  $Res call(
+      {PaymentMethodData paymentMethodData, PaymentMethodOptions? options});
 
   $PaymentMethodDataCopyWith<$Res> get paymentMethodData;
+  $PaymentMethodOptionsCopyWith<$Res>? get options;
 }
 
 /// @nodoc
@@ -2959,12 +2957,17 @@ class __$$_PaymentMethodParamsCardCopyWithImpl<$Res>
   @override
   $Res call({
     Object? paymentMethodData = freezed,
+    Object? options = freezed,
   }) {
     return _then(_$_PaymentMethodParamsCard(
       paymentMethodData: paymentMethodData == freezed
           ? _value.paymentMethodData
           : paymentMethodData // ignore: cast_nullable_to_non_nullable
               as PaymentMethodData,
+      options: options == freezed
+          ? _value.options
+          : options // ignore: cast_nullable_to_non_nullable
+              as PaymentMethodOptions?,
     ));
   }
 
@@ -2974,6 +2977,17 @@ class __$$_PaymentMethodParamsCardCopyWithImpl<$Res>
       return _then(_value.copyWith(paymentMethodData: value));
     });
   }
+
+  @override
+  $PaymentMethodOptionsCopyWith<$Res>? get options {
+    if (_value.options == null) {
+      return null;
+    }
+
+    return $PaymentMethodOptionsCopyWith<$Res>(_value.options!, (value) {
+      return _then(_value.copyWith(options: value));
+    });
+  }
 }
 
 /// @nodoc
@@ -2981,7 +2995,7 @@ class __$$_PaymentMethodParamsCardCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true)
 class _$_PaymentMethodParamsCard implements _PaymentMethodParamsCard {
   const _$_PaymentMethodParamsCard(
-      {required this.paymentMethodData, final String? $type})
+      {required this.paymentMethodData, this.options, final String? $type})
       : $type = $type ?? 'Card';
 
   factory _$_PaymentMethodParamsCard.fromJson(Map<String, dynamic> json) =>
@@ -2991,12 +3005,16 @@ class _$_PaymentMethodParamsCard implements _PaymentMethodParamsCard {
   @override
   final PaymentMethodData paymentMethodData;
 
+  /// Paymentmethod options
+  @override
+  final PaymentMethodOptions? options;
+
   @JsonKey(name: 'paymentMethodType')
   final String $type;
 
   @override
   String toString() {
-    return 'PaymentMethodParams.card(paymentMethodData: $paymentMethodData)';
+    return 'PaymentMethodParams.card(paymentMethodData: $paymentMethodData, options: $options)';
   }
 
   @override
@@ -3005,13 +3023,16 @@ class _$_PaymentMethodParamsCard implements _PaymentMethodParamsCard {
         (other.runtimeType == runtimeType &&
             other is _$_PaymentMethodParamsCard &&
             const DeepCollectionEquality()
-                .equals(other.paymentMethodData, paymentMethodData));
+                .equals(other.paymentMethodData, paymentMethodData) &&
+            const DeepCollectionEquality().equals(other.options, options));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(paymentMethodData));
+      runtimeType,
+      const DeepCollectionEquality().hash(paymentMethodData),
+      const DeepCollectionEquality().hash(options));
 
   @JsonKey(ignore: true)
   @override
@@ -3023,10 +3044,14 @@ class _$_PaymentMethodParamsCard implements _PaymentMethodParamsCard {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -3046,19 +3071,24 @@ class _$_PaymentMethodParamsCard implements _PaymentMethodParamsCard {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
-    return card(paymentMethodData);
+    return card(paymentMethodData, options);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -3077,18 +3107,24 @@ class _$_PaymentMethodParamsCard implements _PaymentMethodParamsCard {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
-    return card?.call(paymentMethodData);
+    return card?.call(paymentMethodData, options);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -3107,11 +3143,13 @@ class _$_PaymentMethodParamsCard implements _PaymentMethodParamsCard {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (card != null) {
-      return card(paymentMethodData);
+      return card(paymentMethodData, options);
     }
     return orElse();
   }
@@ -3211,22 +3249,23 @@ class _$_PaymentMethodParamsCard implements _PaymentMethodParamsCard {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsCardToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsCardToJson(this);
   }
 }
 
 abstract class _PaymentMethodParamsCard implements PaymentMethodParams {
   const factory _PaymentMethodParamsCard(
-          {required final PaymentMethodData paymentMethodData}) =
-      _$_PaymentMethodParamsCard;
+      {required final PaymentMethodData paymentMethodData,
+      final PaymentMethodOptions? options}) = _$_PaymentMethodParamsCard;
 
   factory _PaymentMethodParamsCard.fromJson(Map<String, dynamic> json) =
       _$_PaymentMethodParamsCard.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
+
+  /// Paymentmethod options
+  PaymentMethodOptions? get options => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsCardCopyWith<_$_PaymentMethodParamsCard>
       get copyWith => throw _privateConstructorUsedError;
@@ -3238,9 +3277,12 @@ abstract class _$$_PaymentMethodParamsCardWithTokenCopyWith<$Res> {
           _$_PaymentMethodParamsCardWithToken value,
           $Res Function(_$_PaymentMethodParamsCardWithToken) then) =
       __$$_PaymentMethodParamsCardWithTokenCopyWithImpl<$Res>;
-  $Res call({PaymentMethodDataCardFromToken paymentMethodData});
+  $Res call(
+      {PaymentMethodDataCardFromToken paymentMethodData,
+      PaymentMethodOptions? options});
 
   $PaymentMethodDataCardFromTokenCopyWith<$Res> get paymentMethodData;
+  $PaymentMethodOptionsCopyWith<$Res>? get options;
 }
 
 /// @nodoc
@@ -3259,12 +3301,17 @@ class __$$_PaymentMethodParamsCardWithTokenCopyWithImpl<$Res>
   @override
   $Res call({
     Object? paymentMethodData = freezed,
+    Object? options = freezed,
   }) {
     return _then(_$_PaymentMethodParamsCardWithToken(
       paymentMethodData: paymentMethodData == freezed
           ? _value.paymentMethodData
           : paymentMethodData // ignore: cast_nullable_to_non_nullable
               as PaymentMethodDataCardFromToken,
+      options: options == freezed
+          ? _value.options
+          : options // ignore: cast_nullable_to_non_nullable
+              as PaymentMethodOptions?,
     ));
   }
 
@@ -3275,6 +3322,17 @@ class __$$_PaymentMethodParamsCardWithTokenCopyWithImpl<$Res>
       return _then(_value.copyWith(paymentMethodData: value));
     });
   }
+
+  @override
+  $PaymentMethodOptionsCopyWith<$Res>? get options {
+    if (_value.options == null) {
+      return null;
+    }
+
+    return $PaymentMethodOptionsCopyWith<$Res>(_value.options!, (value) {
+      return _then(_value.copyWith(options: value));
+    });
+  }
 }
 
 /// @nodoc
@@ -3283,7 +3341,7 @@ class __$$_PaymentMethodParamsCardWithTokenCopyWithImpl<$Res>
 class _$_PaymentMethodParamsCardWithToken
     implements _PaymentMethodParamsCardWithToken {
   const _$_PaymentMethodParamsCardWithToken(
-      {required this.paymentMethodData, final String? $type})
+      {required this.paymentMethodData, this.options, final String? $type})
       : $type = $type ?? 'Card';
 
   factory _$_PaymentMethodParamsCardWithToken.fromJson(
@@ -3294,12 +3352,16 @@ class _$_PaymentMethodParamsCardWithToken
   @override
   final PaymentMethodDataCardFromToken paymentMethodData;
 
+  /// Paymentmethod options
+  @override
+  final PaymentMethodOptions? options;
+
   @JsonKey(name: 'paymentMethodType')
   final String $type;
 
   @override
   String toString() {
-    return 'PaymentMethodParams.cardFromToken(paymentMethodData: $paymentMethodData)';
+    return 'PaymentMethodParams.cardFromToken(paymentMethodData: $paymentMethodData, options: $options)';
   }
 
   @override
@@ -3308,13 +3370,16 @@ class _$_PaymentMethodParamsCardWithToken
         (other.runtimeType == runtimeType &&
             other is _$_PaymentMethodParamsCardWithToken &&
             const DeepCollectionEquality()
-                .equals(other.paymentMethodData, paymentMethodData));
+                .equals(other.paymentMethodData, paymentMethodData) &&
+            const DeepCollectionEquality().equals(other.options, options));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(paymentMethodData));
+      runtimeType,
+      const DeepCollectionEquality().hash(paymentMethodData),
+      const DeepCollectionEquality().hash(options));
 
   @JsonKey(ignore: true)
   @override
@@ -3326,10 +3391,14 @@ class _$_PaymentMethodParamsCardWithToken
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -3349,19 +3418,24 @@ class _$_PaymentMethodParamsCardWithToken
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
-    return cardFromToken(paymentMethodData);
+    return cardFromToken(paymentMethodData, options);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -3380,18 +3454,24 @@ class _$_PaymentMethodParamsCardWithToken
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
-    return cardFromToken?.call(paymentMethodData);
+    return cardFromToken?.call(paymentMethodData, options);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -3410,11 +3490,13 @@ class _$_PaymentMethodParamsCardWithToken
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (cardFromToken != null) {
-      return cardFromToken(paymentMethodData);
+      return cardFromToken(paymentMethodData, options);
     }
     return orElse();
   }
@@ -3514,23 +3596,26 @@ class _$_PaymentMethodParamsCardWithToken
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsCardWithTokenToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsCardWithTokenToJson(this);
   }
 }
 
 abstract class _PaymentMethodParamsCardWithToken
     implements PaymentMethodParams {
   const factory _PaymentMethodParamsCardWithToken(
-          {required final PaymentMethodDataCardFromToken paymentMethodData}) =
+          {required final PaymentMethodDataCardFromToken paymentMethodData,
+          final PaymentMethodOptions? options}) =
       _$_PaymentMethodParamsCardWithToken;
 
   factory _PaymentMethodParamsCardWithToken.fromJson(
       Map<String, dynamic> json) = _$_PaymentMethodParamsCardWithToken.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodDataCardFromToken get paymentMethodData;
+  PaymentMethodDataCardFromToken get paymentMethodData =>
+      throw _privateConstructorUsedError;
+
+  /// Paymentmethod options
+  PaymentMethodOptions? get options => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsCardWithTokenCopyWith<
           _$_PaymentMethodParamsCardWithToken>
@@ -3543,9 +3628,12 @@ abstract class _$$_PaymentMethodParamsCardWithMethodIdCopyWith<$Res> {
           _$_PaymentMethodParamsCardWithMethodId value,
           $Res Function(_$_PaymentMethodParamsCardWithMethodId) then) =
       __$$_PaymentMethodParamsCardWithMethodIdCopyWithImpl<$Res>;
-  $Res call({PaymentMethodDataCardFromMethod paymentMethodData});
+  $Res call(
+      {PaymentMethodDataCardFromMethod paymentMethodData,
+      PaymentMethodOptions? options});
 
   $PaymentMethodDataCardFromMethodCopyWith<$Res> get paymentMethodData;
+  $PaymentMethodOptionsCopyWith<$Res>? get options;
 }
 
 /// @nodoc
@@ -3565,12 +3653,17 @@ class __$$_PaymentMethodParamsCardWithMethodIdCopyWithImpl<$Res>
   @override
   $Res call({
     Object? paymentMethodData = freezed,
+    Object? options = freezed,
   }) {
     return _then(_$_PaymentMethodParamsCardWithMethodId(
       paymentMethodData: paymentMethodData == freezed
           ? _value.paymentMethodData
           : paymentMethodData // ignore: cast_nullable_to_non_nullable
               as PaymentMethodDataCardFromMethod,
+      options: options == freezed
+          ? _value.options
+          : options // ignore: cast_nullable_to_non_nullable
+              as PaymentMethodOptions?,
     ));
   }
 
@@ -3581,6 +3674,17 @@ class __$$_PaymentMethodParamsCardWithMethodIdCopyWithImpl<$Res>
       return _then(_value.copyWith(paymentMethodData: value));
     });
   }
+
+  @override
+  $PaymentMethodOptionsCopyWith<$Res>? get options {
+    if (_value.options == null) {
+      return null;
+    }
+
+    return $PaymentMethodOptionsCopyWith<$Res>(_value.options!, (value) {
+      return _then(_value.copyWith(options: value));
+    });
+  }
 }
 
 /// @nodoc
@@ -3589,7 +3693,7 @@ class __$$_PaymentMethodParamsCardWithMethodIdCopyWithImpl<$Res>
 class _$_PaymentMethodParamsCardWithMethodId
     implements _PaymentMethodParamsCardWithMethodId {
   const _$_PaymentMethodParamsCardWithMethodId(
-      {required this.paymentMethodData, final String? $type})
+      {required this.paymentMethodData, this.options, final String? $type})
       : $type = $type ?? 'Card';
 
   factory _$_PaymentMethodParamsCardWithMethodId.fromJson(
@@ -3600,12 +3704,16 @@ class _$_PaymentMethodParamsCardWithMethodId
   @override
   final PaymentMethodDataCardFromMethod paymentMethodData;
 
+  /// Paymentmethod options
+  @override
+  final PaymentMethodOptions? options;
+
   @JsonKey(name: 'paymentMethodType')
   final String $type;
 
   @override
   String toString() {
-    return 'PaymentMethodParams.cardFromMethodId(paymentMethodData: $paymentMethodData)';
+    return 'PaymentMethodParams.cardFromMethodId(paymentMethodData: $paymentMethodData, options: $options)';
   }
 
   @override
@@ -3614,13 +3722,16 @@ class _$_PaymentMethodParamsCardWithMethodId
         (other.runtimeType == runtimeType &&
             other is _$_PaymentMethodParamsCardWithMethodId &&
             const DeepCollectionEquality()
-                .equals(other.paymentMethodData, paymentMethodData));
+                .equals(other.paymentMethodData, paymentMethodData) &&
+            const DeepCollectionEquality().equals(other.options, options));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(paymentMethodData));
+      runtimeType,
+      const DeepCollectionEquality().hash(paymentMethodData),
+      const DeepCollectionEquality().hash(options));
 
   @JsonKey(ignore: true)
   @override
@@ -3632,10 +3743,14 @@ class _$_PaymentMethodParamsCardWithMethodId
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -3655,19 +3770,24 @@ class _$_PaymentMethodParamsCardWithMethodId
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
-    return cardFromMethodId(paymentMethodData);
+    return cardFromMethodId(paymentMethodData, options);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -3686,18 +3806,24 @@ class _$_PaymentMethodParamsCardWithMethodId
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
-    return cardFromMethodId?.call(paymentMethodData);
+    return cardFromMethodId?.call(paymentMethodData, options);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -3716,11 +3842,13 @@ class _$_PaymentMethodParamsCardWithMethodId
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (cardFromMethodId != null) {
-      return cardFromMethodId(paymentMethodData);
+      return cardFromMethodId(paymentMethodData, options);
     }
     return orElse();
   }
@@ -3820,16 +3948,15 @@ class _$_PaymentMethodParamsCardWithMethodId
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsCardWithMethodIdToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsCardWithMethodIdToJson(this);
   }
 }
 
 abstract class _PaymentMethodParamsCardWithMethodId
     implements PaymentMethodParams {
   const factory _PaymentMethodParamsCardWithMethodId(
-          {required final PaymentMethodDataCardFromMethod paymentMethodData}) =
+          {required final PaymentMethodDataCardFromMethod paymentMethodData,
+          final PaymentMethodOptions? options}) =
       _$_PaymentMethodParamsCardWithMethodId;
 
   factory _PaymentMethodParamsCardWithMethodId.fromJson(
@@ -3837,7 +3964,11 @@ abstract class _PaymentMethodParamsCardWithMethodId
       _$_PaymentMethodParamsCardWithMethodId.fromJson;
 
   /// Payment method data object for card from payment method.
-  PaymentMethodDataCardFromMethod get paymentMethodData;
+  PaymentMethodDataCardFromMethod get paymentMethodData =>
+      throw _privateConstructorUsedError;
+
+  /// Paymentmethod options
+  PaymentMethodOptions? get options => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsCardWithMethodIdCopyWith<
           _$_PaymentMethodParamsCardWithMethodId>
@@ -3934,10 +4065,14 @@ class _$_PaymentMethodParamsAlipay implements _PaymentMethodParamsAlipay {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -3957,7 +4092,8 @@ class _$_PaymentMethodParamsAlipay implements _PaymentMethodParamsAlipay {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return alipay(paymentMethodData);
@@ -3966,10 +4102,14 @@ class _$_PaymentMethodParamsAlipay implements _PaymentMethodParamsAlipay {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -3988,7 +4128,9 @@ class _$_PaymentMethodParamsAlipay implements _PaymentMethodParamsAlipay {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return alipay?.call(paymentMethodData);
   }
@@ -3996,10 +4138,14 @@ class _$_PaymentMethodParamsAlipay implements _PaymentMethodParamsAlipay {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -4018,7 +4164,9 @@ class _$_PaymentMethodParamsAlipay implements _PaymentMethodParamsAlipay {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (alipay != null) {
@@ -4122,9 +4270,7 @@ class _$_PaymentMethodParamsAlipay implements _PaymentMethodParamsAlipay {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsAlipayToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsAlipayToJson(this);
   }
 }
 
@@ -4137,7 +4283,7 @@ abstract class _PaymentMethodParamsAlipay implements PaymentMethodParams {
       _$_PaymentMethodParamsAlipay.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsAlipayCopyWith<_$_PaymentMethodParamsAlipay>
       get copyWith => throw _privateConstructorUsedError;
@@ -4233,10 +4379,14 @@ class _$_PaymentMethodParamsIdeal implements _PaymentMethodParamsIdeal {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -4256,7 +4406,8 @@ class _$_PaymentMethodParamsIdeal implements _PaymentMethodParamsIdeal {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return ideal(paymentMethodData);
@@ -4265,10 +4416,14 @@ class _$_PaymentMethodParamsIdeal implements _PaymentMethodParamsIdeal {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -4287,7 +4442,9 @@ class _$_PaymentMethodParamsIdeal implements _PaymentMethodParamsIdeal {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return ideal?.call(paymentMethodData);
   }
@@ -4295,10 +4452,14 @@ class _$_PaymentMethodParamsIdeal implements _PaymentMethodParamsIdeal {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -4317,7 +4478,9 @@ class _$_PaymentMethodParamsIdeal implements _PaymentMethodParamsIdeal {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (ideal != null) {
@@ -4421,9 +4584,7 @@ class _$_PaymentMethodParamsIdeal implements _PaymentMethodParamsIdeal {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsIdealToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsIdealToJson(this);
   }
 }
 
@@ -4436,7 +4597,8 @@ abstract class _PaymentMethodParamsIdeal implements PaymentMethodParams {
       _$_PaymentMethodParamsIdeal.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodDataIdeal get paymentMethodData;
+  PaymentMethodDataIdeal get paymentMethodData =>
+      throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsIdealCopyWith<_$_PaymentMethodParamsIdeal>
       get copyWith => throw _privateConstructorUsedError;
@@ -4533,10 +4695,14 @@ class _$_PaymentMethodParamsAubecs implements _PaymentMethodParamsAubecs {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -4556,7 +4722,8 @@ class _$_PaymentMethodParamsAubecs implements _PaymentMethodParamsAubecs {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return aubecs(paymentMethodData);
@@ -4565,10 +4732,14 @@ class _$_PaymentMethodParamsAubecs implements _PaymentMethodParamsAubecs {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -4587,7 +4758,9 @@ class _$_PaymentMethodParamsAubecs implements _PaymentMethodParamsAubecs {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return aubecs?.call(paymentMethodData);
   }
@@ -4595,10 +4768,14 @@ class _$_PaymentMethodParamsAubecs implements _PaymentMethodParamsAubecs {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -4617,7 +4794,9 @@ class _$_PaymentMethodParamsAubecs implements _PaymentMethodParamsAubecs {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (aubecs != null) {
@@ -4721,9 +4900,7 @@ class _$_PaymentMethodParamsAubecs implements _PaymentMethodParamsAubecs {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsAubecsToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsAubecsToJson(this);
   }
 }
 
@@ -4736,7 +4913,8 @@ abstract class _PaymentMethodParamsAubecs implements PaymentMethodParams {
       _$_PaymentMethodParamsAubecs.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodDataAubecs get paymentMethodData;
+  PaymentMethodDataAubecs get paymentMethodData =>
+      throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsAubecsCopyWith<_$_PaymentMethodParamsAubecs>
       get copyWith => throw _privateConstructorUsedError;
@@ -4834,10 +5012,14 @@ class _$_PaymentMethodParamsBankContact
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -4857,7 +5039,8 @@ class _$_PaymentMethodParamsBankContact
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return bancontact(paymentMethodData);
@@ -4866,10 +5049,14 @@ class _$_PaymentMethodParamsBankContact
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -4888,7 +5075,9 @@ class _$_PaymentMethodParamsBankContact
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return bancontact?.call(paymentMethodData);
   }
@@ -4896,10 +5085,14 @@ class _$_PaymentMethodParamsBankContact
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -4918,7 +5111,9 @@ class _$_PaymentMethodParamsBankContact
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (bancontact != null) {
@@ -5022,9 +5217,7 @@ class _$_PaymentMethodParamsBankContact
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsBankContactToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsBankContactToJson(this);
   }
 }
 
@@ -5037,7 +5230,7 @@ abstract class _PaymentMethodParamsBankContact implements PaymentMethodParams {
       _$_PaymentMethodParamsBankContact.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsBankContactCopyWith<_$_PaymentMethodParamsBankContact>
       get copyWith => throw _privateConstructorUsedError;
@@ -5133,10 +5326,14 @@ class _$_PaymentMethodParamsGiroPay implements _PaymentMethodParamsGiroPay {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -5156,7 +5353,8 @@ class _$_PaymentMethodParamsGiroPay implements _PaymentMethodParamsGiroPay {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return giroPay(paymentMethodData);
@@ -5165,10 +5363,14 @@ class _$_PaymentMethodParamsGiroPay implements _PaymentMethodParamsGiroPay {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -5187,7 +5389,9 @@ class _$_PaymentMethodParamsGiroPay implements _PaymentMethodParamsGiroPay {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return giroPay?.call(paymentMethodData);
   }
@@ -5195,10 +5399,14 @@ class _$_PaymentMethodParamsGiroPay implements _PaymentMethodParamsGiroPay {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -5217,7 +5425,9 @@ class _$_PaymentMethodParamsGiroPay implements _PaymentMethodParamsGiroPay {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (giroPay != null) {
@@ -5321,9 +5531,7 @@ class _$_PaymentMethodParamsGiroPay implements _PaymentMethodParamsGiroPay {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsGiroPayToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsGiroPayToJson(this);
   }
 }
 
@@ -5336,7 +5544,7 @@ abstract class _PaymentMethodParamsGiroPay implements PaymentMethodParams {
       _$_PaymentMethodParamsGiroPay.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsGiroPayCopyWith<_$_PaymentMethodParamsGiroPay>
       get copyWith => throw _privateConstructorUsedError;
@@ -5430,10 +5638,14 @@ class _$_PaymentMethodParamsEps implements _PaymentMethodParamsEps {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -5453,7 +5665,8 @@ class _$_PaymentMethodParamsEps implements _PaymentMethodParamsEps {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return eps(paymentMethodData);
@@ -5462,10 +5675,14 @@ class _$_PaymentMethodParamsEps implements _PaymentMethodParamsEps {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -5484,7 +5701,9 @@ class _$_PaymentMethodParamsEps implements _PaymentMethodParamsEps {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return eps?.call(paymentMethodData);
   }
@@ -5492,10 +5711,14 @@ class _$_PaymentMethodParamsEps implements _PaymentMethodParamsEps {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -5514,7 +5737,9 @@ class _$_PaymentMethodParamsEps implements _PaymentMethodParamsEps {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (eps != null) {
@@ -5618,9 +5843,7 @@ class _$_PaymentMethodParamsEps implements _PaymentMethodParamsEps {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsEpsToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsEpsToJson(this);
   }
 }
 
@@ -5633,7 +5856,7 @@ abstract class _PaymentMethodParamsEps implements PaymentMethodParams {
       _$_PaymentMethodParamsEps.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsEpsCopyWith<_$_PaymentMethodParamsEps> get copyWith =>
       throw _privateConstructorUsedError;
@@ -5729,10 +5952,14 @@ class _$_PaymentMethodParamsAffirm implements _PaymentMethodParamsAffirm {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -5752,7 +5979,8 @@ class _$_PaymentMethodParamsAffirm implements _PaymentMethodParamsAffirm {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return affirm(paymentMethodData);
@@ -5761,10 +5989,14 @@ class _$_PaymentMethodParamsAffirm implements _PaymentMethodParamsAffirm {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -5783,7 +6015,9 @@ class _$_PaymentMethodParamsAffirm implements _PaymentMethodParamsAffirm {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return affirm?.call(paymentMethodData);
   }
@@ -5791,10 +6025,14 @@ class _$_PaymentMethodParamsAffirm implements _PaymentMethodParamsAffirm {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -5813,7 +6051,9 @@ class _$_PaymentMethodParamsAffirm implements _PaymentMethodParamsAffirm {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (affirm != null) {
@@ -5917,9 +6157,7 @@ class _$_PaymentMethodParamsAffirm implements _PaymentMethodParamsAffirm {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsAffirmToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsAffirmToJson(this);
   }
 }
 
@@ -5932,7 +6170,7 @@ abstract class _PaymentMethodParamsAffirm implements PaymentMethodParams {
       _$_PaymentMethodParamsAffirm.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsAffirmCopyWith<_$_PaymentMethodParamsAffirm>
       get copyWith => throw _privateConstructorUsedError;
@@ -6026,10 +6264,14 @@ class _$_PaymentMethodParamsPay implements _PaymentMethodParamsPay {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -6049,7 +6291,8 @@ class _$_PaymentMethodParamsPay implements _PaymentMethodParamsPay {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return grabPay(paymentMethodData);
@@ -6058,10 +6301,14 @@ class _$_PaymentMethodParamsPay implements _PaymentMethodParamsPay {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -6080,7 +6327,9 @@ class _$_PaymentMethodParamsPay implements _PaymentMethodParamsPay {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return grabPay?.call(paymentMethodData);
   }
@@ -6088,10 +6337,14 @@ class _$_PaymentMethodParamsPay implements _PaymentMethodParamsPay {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -6110,7 +6363,9 @@ class _$_PaymentMethodParamsPay implements _PaymentMethodParamsPay {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (grabPay != null) {
@@ -6214,9 +6469,7 @@ class _$_PaymentMethodParamsPay implements _PaymentMethodParamsPay {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsPayToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsPayToJson(this);
   }
 }
 
@@ -6229,7 +6482,7 @@ abstract class _PaymentMethodParamsPay implements PaymentMethodParams {
       _$_PaymentMethodParamsPay.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsPayCopyWith<_$_PaymentMethodParamsPay> get copyWith =>
       throw _privateConstructorUsedError;
@@ -6323,10 +6576,14 @@ class _$_PaymentMethodParamsP24 implements _PaymentMethodParamsP24 {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -6346,7 +6603,8 @@ class _$_PaymentMethodParamsP24 implements _PaymentMethodParamsP24 {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return p24(paymentMethodData);
@@ -6355,10 +6613,14 @@ class _$_PaymentMethodParamsP24 implements _PaymentMethodParamsP24 {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -6377,7 +6639,9 @@ class _$_PaymentMethodParamsP24 implements _PaymentMethodParamsP24 {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return p24?.call(paymentMethodData);
   }
@@ -6385,10 +6649,14 @@ class _$_PaymentMethodParamsP24 implements _PaymentMethodParamsP24 {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -6407,7 +6675,9 @@ class _$_PaymentMethodParamsP24 implements _PaymentMethodParamsP24 {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (p24 != null) {
@@ -6511,9 +6781,7 @@ class _$_PaymentMethodParamsP24 implements _PaymentMethodParamsP24 {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsP24ToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsP24ToJson(this);
   }
 }
 
@@ -6526,7 +6794,7 @@ abstract class _PaymentMethodParamsP24 implements PaymentMethodParams {
       _$_PaymentMethodParamsP24.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsP24CopyWith<_$_PaymentMethodParamsP24> get copyWith =>
       throw _privateConstructorUsedError;
@@ -6621,10 +6889,14 @@ class _$_PaymentMethodParamsFpx implements _PaymentMethodParamsFpx {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -6644,7 +6916,8 @@ class _$_PaymentMethodParamsFpx implements _PaymentMethodParamsFpx {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return fpx(paymentMethodData);
@@ -6653,10 +6926,14 @@ class _$_PaymentMethodParamsFpx implements _PaymentMethodParamsFpx {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -6675,7 +6952,9 @@ class _$_PaymentMethodParamsFpx implements _PaymentMethodParamsFpx {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return fpx?.call(paymentMethodData);
   }
@@ -6683,10 +6962,14 @@ class _$_PaymentMethodParamsFpx implements _PaymentMethodParamsFpx {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -6705,7 +6988,9 @@ class _$_PaymentMethodParamsFpx implements _PaymentMethodParamsFpx {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (fpx != null) {
@@ -6809,9 +7094,7 @@ class _$_PaymentMethodParamsFpx implements _PaymentMethodParamsFpx {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsFpxToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsFpxToJson(this);
   }
 }
 
@@ -6824,7 +7107,8 @@ abstract class _PaymentMethodParamsFpx implements PaymentMethodParams {
       _$_PaymentMethodParamsFpx.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodDataFpx get paymentMethodData;
+  PaymentMethodDataFpx get paymentMethodData =>
+      throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsFpxCopyWith<_$_PaymentMethodParamsFpx> get copyWith =>
       throw _privateConstructorUsedError;
@@ -6921,10 +7205,14 @@ class _$_PaymentMethodParamsSepaDebit implements _PaymentMethodParamsSepaDebit {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -6944,7 +7232,8 @@ class _$_PaymentMethodParamsSepaDebit implements _PaymentMethodParamsSepaDebit {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return sepaDebit(paymentMethodData);
@@ -6953,10 +7242,14 @@ class _$_PaymentMethodParamsSepaDebit implements _PaymentMethodParamsSepaDebit {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -6975,7 +7268,9 @@ class _$_PaymentMethodParamsSepaDebit implements _PaymentMethodParamsSepaDebit {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return sepaDebit?.call(paymentMethodData);
   }
@@ -6983,10 +7278,14 @@ class _$_PaymentMethodParamsSepaDebit implements _PaymentMethodParamsSepaDebit {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -7005,7 +7304,9 @@ class _$_PaymentMethodParamsSepaDebit implements _PaymentMethodParamsSepaDebit {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (sepaDebit != null) {
@@ -7109,9 +7410,7 @@ class _$_PaymentMethodParamsSepaDebit implements _PaymentMethodParamsSepaDebit {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsSepaDebitToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsSepaDebitToJson(this);
   }
 }
 
@@ -7124,7 +7423,8 @@ abstract class _PaymentMethodParamsSepaDebit implements PaymentMethodParams {
       _$_PaymentMethodParamsSepaDebit.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodDataSepa get paymentMethodData;
+  PaymentMethodDataSepa get paymentMethodData =>
+      throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsSepaDebitCopyWith<_$_PaymentMethodParamsSepaDebit>
       get copyWith => throw _privateConstructorUsedError;
@@ -7220,10 +7520,14 @@ class _$_PaymentMethodParamsSofort implements _PaymentMethodParamsSofort {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -7243,7 +7547,8 @@ class _$_PaymentMethodParamsSofort implements _PaymentMethodParamsSofort {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return sofort(paymentMethodData);
@@ -7252,10 +7557,14 @@ class _$_PaymentMethodParamsSofort implements _PaymentMethodParamsSofort {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -7274,7 +7583,9 @@ class _$_PaymentMethodParamsSofort implements _PaymentMethodParamsSofort {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return sofort?.call(paymentMethodData);
   }
@@ -7282,10 +7593,14 @@ class _$_PaymentMethodParamsSofort implements _PaymentMethodParamsSofort {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -7304,7 +7619,9 @@ class _$_PaymentMethodParamsSofort implements _PaymentMethodParamsSofort {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (sofort != null) {
@@ -7408,9 +7725,7 @@ class _$_PaymentMethodParamsSofort implements _PaymentMethodParamsSofort {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsSofortToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsSofortToJson(this);
   }
 }
 
@@ -7422,7 +7737,8 @@ abstract class _PaymentMethodParamsSofort implements PaymentMethodParams {
   factory _PaymentMethodParamsSofort.fromJson(Map<String, dynamic> json) =
       _$_PaymentMethodParamsSofort.fromJson;
 
-  PaymentMethodDataSofort get paymentMethodData;
+  PaymentMethodDataSofort get paymentMethodData =>
+      throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsSofortCopyWith<_$_PaymentMethodParamsSofort>
       get copyWith => throw _privateConstructorUsedError;
@@ -7522,10 +7838,14 @@ class _$_PaymentMethodParamsAfterpayClearpay
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -7545,7 +7865,8 @@ class _$_PaymentMethodParamsAfterpayClearpay
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return afterpayClearpay(paymentMethodData);
@@ -7554,10 +7875,14 @@ class _$_PaymentMethodParamsAfterpayClearpay
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -7576,7 +7901,9 @@ class _$_PaymentMethodParamsAfterpayClearpay
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return afterpayClearpay?.call(paymentMethodData);
   }
@@ -7584,10 +7911,14 @@ class _$_PaymentMethodParamsAfterpayClearpay
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -7606,7 +7937,9 @@ class _$_PaymentMethodParamsAfterpayClearpay
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (afterpayClearpay != null) {
@@ -7710,9 +8043,7 @@ class _$_PaymentMethodParamsAfterpayClearpay
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsAfterpayClearpayToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsAfterpayClearpayToJson(this);
   }
 }
 
@@ -7726,7 +8057,8 @@ abstract class _PaymentMethodParamsAfterpayClearpay
           Map<String, dynamic> json) =
       _$_PaymentMethodParamsAfterpayClearpay.fromJson;
 
-  PaymentMethodDataAfterPay get paymentMethodData;
+  PaymentMethodDataAfterPay get paymentMethodData =>
+      throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsAfterpayClearpayCopyWith<
           _$_PaymentMethodParamsAfterpayClearpay>
@@ -7822,10 +8154,14 @@ class _$_PaymentMethodParamsOxxo implements _PaymentMethodParamsOxxo {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -7845,7 +8181,8 @@ class _$_PaymentMethodParamsOxxo implements _PaymentMethodParamsOxxo {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return oxxo(paymentMethodData);
@@ -7854,10 +8191,14 @@ class _$_PaymentMethodParamsOxxo implements _PaymentMethodParamsOxxo {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -7876,7 +8217,9 @@ class _$_PaymentMethodParamsOxxo implements _PaymentMethodParamsOxxo {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return oxxo?.call(paymentMethodData);
   }
@@ -7884,10 +8227,14 @@ class _$_PaymentMethodParamsOxxo implements _PaymentMethodParamsOxxo {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -7906,7 +8253,9 @@ class _$_PaymentMethodParamsOxxo implements _PaymentMethodParamsOxxo {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (oxxo != null) {
@@ -8010,9 +8359,7 @@ class _$_PaymentMethodParamsOxxo implements _PaymentMethodParamsOxxo {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsOxxoToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsOxxoToJson(this);
   }
 }
 
@@ -8025,7 +8372,7 @@ abstract class _PaymentMethodParamsOxxo implements PaymentMethodParams {
       _$_PaymentMethodParamsOxxo.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsOxxoCopyWith<_$_PaymentMethodParamsOxxo>
       get copyWith => throw _privateConstructorUsedError;
@@ -8124,10 +8471,14 @@ class _$_PaymentMethodParamsKlarna implements _PaymentMethodParamsKlarna {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -8147,7 +8498,8 @@ class _$_PaymentMethodParamsKlarna implements _PaymentMethodParamsKlarna {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return klarna(paymentMethodData);
@@ -8156,10 +8508,14 @@ class _$_PaymentMethodParamsKlarna implements _PaymentMethodParamsKlarna {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -8178,7 +8534,9 @@ class _$_PaymentMethodParamsKlarna implements _PaymentMethodParamsKlarna {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return klarna?.call(paymentMethodData);
   }
@@ -8186,10 +8544,14 @@ class _$_PaymentMethodParamsKlarna implements _PaymentMethodParamsKlarna {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -8208,7 +8570,9 @@ class _$_PaymentMethodParamsKlarna implements _PaymentMethodParamsKlarna {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (klarna != null) {
@@ -8312,9 +8676,7 @@ class _$_PaymentMethodParamsKlarna implements _PaymentMethodParamsKlarna {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsKlarnaToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsKlarnaToJson(this);
   }
 }
 
@@ -8330,7 +8692,7 @@ abstract class _PaymentMethodParamsKlarna implements PaymentMethodParams {
   ///
   /// Make sure to add an email and country (part of the address) in the
   /// billingdetails which is required for using Klarna.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsKlarnaCopyWith<_$_PaymentMethodParamsKlarna>
       get copyWith => throw _privateConstructorUsedError;
@@ -8429,10 +8791,14 @@ class _$_PaymentMethodParamsPayPal implements _PaymentMethodParamsPayPal {
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -8452,7 +8818,8 @@ class _$_PaymentMethodParamsPayPal implements _PaymentMethodParamsPayPal {
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
     return payPal(paymentMethodData);
@@ -8461,10 +8828,14 @@ class _$_PaymentMethodParamsPayPal implements _PaymentMethodParamsPayPal {
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -8483,7 +8854,9 @@ class _$_PaymentMethodParamsPayPal implements _PaymentMethodParamsPayPal {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
     return payPal?.call(paymentMethodData);
   }
@@ -8491,10 +8864,14 @@ class _$_PaymentMethodParamsPayPal implements _PaymentMethodParamsPayPal {
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -8513,7 +8890,9 @@ class _$_PaymentMethodParamsPayPal implements _PaymentMethodParamsPayPal {
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (payPal != null) {
@@ -8617,9 +8996,7 @@ class _$_PaymentMethodParamsPayPal implements _PaymentMethodParamsPayPal {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsPayPalToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsPayPalToJson(this);
   }
 }
 
@@ -8635,7 +9012,7 @@ abstract class _PaymentMethodParamsPayPal implements PaymentMethodParams {
   ///
   /// Make sure to add an email and country (part of the address) in the
   /// billingdetails which is required for using Klarna.
-  PaymentMethodData get paymentMethodData;
+  PaymentMethodData get paymentMethodData => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsPayPalCopyWith<_$_PaymentMethodParamsPayPal>
       get copyWith => throw _privateConstructorUsedError;
@@ -8647,9 +9024,12 @@ abstract class _$$_PaymentMethodParamsUsBankAccountCopyWith<$Res> {
           _$_PaymentMethodParamsUsBankAccount value,
           $Res Function(_$_PaymentMethodParamsUsBankAccount) then) =
       __$$_PaymentMethodParamsUsBankAccountCopyWithImpl<$Res>;
-  $Res call({PaymentMethodDataUsBank paymentMethodData});
+  $Res call(
+      {PaymentMethodDataUsBank paymentMethodData,
+      PaymentMethodOptions? options});
 
   $PaymentMethodDataUsBankCopyWith<$Res> get paymentMethodData;
+  $PaymentMethodOptionsCopyWith<$Res>? get options;
 }
 
 /// @nodoc
@@ -8668,12 +9048,17 @@ class __$$_PaymentMethodParamsUsBankAccountCopyWithImpl<$Res>
   @override
   $Res call({
     Object? paymentMethodData = freezed,
+    Object? options = freezed,
   }) {
     return _then(_$_PaymentMethodParamsUsBankAccount(
       paymentMethodData: paymentMethodData == freezed
           ? _value.paymentMethodData
           : paymentMethodData // ignore: cast_nullable_to_non_nullable
               as PaymentMethodDataUsBank,
+      options: options == freezed
+          ? _value.options
+          : options // ignore: cast_nullable_to_non_nullable
+              as PaymentMethodOptions?,
     ));
   }
 
@@ -8684,6 +9069,17 @@ class __$$_PaymentMethodParamsUsBankAccountCopyWithImpl<$Res>
       return _then(_value.copyWith(paymentMethodData: value));
     });
   }
+
+  @override
+  $PaymentMethodOptionsCopyWith<$Res>? get options {
+    if (_value.options == null) {
+      return null;
+    }
+
+    return $PaymentMethodOptionsCopyWith<$Res>(_value.options!, (value) {
+      return _then(_value.copyWith(options: value));
+    });
+  }
 }
 
 /// @nodoc
@@ -8692,7 +9088,7 @@ class __$$_PaymentMethodParamsUsBankAccountCopyWithImpl<$Res>
 class _$_PaymentMethodParamsUsBankAccount
     implements _PaymentMethodParamsUsBankAccount {
   const _$_PaymentMethodParamsUsBankAccount(
-      {required this.paymentMethodData, final String? $type})
+      {required this.paymentMethodData, this.options, final String? $type})
       : $type = $type ?? 'USBankAccount';
 
   factory _$_PaymentMethodParamsUsBankAccount.fromJson(
@@ -8703,12 +9099,16 @@ class _$_PaymentMethodParamsUsBankAccount
   @override
   final PaymentMethodDataUsBank paymentMethodData;
 
+  /// Payment options.
+  @override
+  final PaymentMethodOptions? options;
+
   @JsonKey(name: 'paymentMethodType')
   final String $type;
 
   @override
   String toString() {
-    return 'PaymentMethodParams.usBankAccount(paymentMethodData: $paymentMethodData)';
+    return 'PaymentMethodParams.usBankAccount(paymentMethodData: $paymentMethodData, options: $options)';
   }
 
   @override
@@ -8717,13 +9117,16 @@ class _$_PaymentMethodParamsUsBankAccount
         (other.runtimeType == runtimeType &&
             other is _$_PaymentMethodParamsUsBankAccount &&
             const DeepCollectionEquality()
-                .equals(other.paymentMethodData, paymentMethodData));
+                .equals(other.paymentMethodData, paymentMethodData) &&
+            const DeepCollectionEquality().equals(other.options, options));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(paymentMethodData));
+      runtimeType,
+      const DeepCollectionEquality().hash(paymentMethodData),
+      const DeepCollectionEquality().hash(options));
 
   @JsonKey(ignore: true)
   @override
@@ -8735,10 +9138,14 @@ class _$_PaymentMethodParamsUsBankAccount
   @override
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
-    required TResult Function(PaymentMethodData paymentMethodData) card,
-    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData)
+    required TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)
+        card,
+    required TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromToken,
-    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)
+    required TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)
         cardFromMethodId,
     required TResult Function(PaymentMethodData paymentMethodData) alipay,
     required TResult Function(PaymentMethodDataIdeal paymentMethodData) ideal,
@@ -8758,19 +9165,24 @@ class _$_PaymentMethodParamsUsBankAccount
     required TResult Function(PaymentMethodData paymentMethodData) oxxo,
     required TResult Function(PaymentMethodData paymentMethodData) klarna,
     required TResult Function(PaymentMethodData paymentMethodData) payPal,
-    required TResult Function(PaymentMethodDataUsBank paymentMethodData)
+    required TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)
         usBankAccount,
   }) {
-    return usBankAccount(paymentMethodData);
+    return usBankAccount(paymentMethodData, options);
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -8789,18 +9201,24 @@ class _$_PaymentMethodParamsUsBankAccount
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
   }) {
-    return usBankAccount?.call(paymentMethodData);
+    return usBankAccount?.call(paymentMethodData, options);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
-    TResult Function(PaymentMethodData paymentMethodData)? card,
-    TResult Function(PaymentMethodDataCardFromToken paymentMethodData)?
+    TResult Function(
+            PaymentMethodData paymentMethodData, PaymentMethodOptions? options)?
+        card,
+    TResult Function(PaymentMethodDataCardFromToken paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromToken,
-    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData)?
+    TResult Function(PaymentMethodDataCardFromMethod paymentMethodData,
+            PaymentMethodOptions? options)?
         cardFromMethodId,
     TResult Function(PaymentMethodData paymentMethodData)? alipay,
     TResult Function(PaymentMethodDataIdeal paymentMethodData)? ideal,
@@ -8819,11 +9237,13 @@ class _$_PaymentMethodParamsUsBankAccount
     TResult Function(PaymentMethodData paymentMethodData)? oxxo,
     TResult Function(PaymentMethodData paymentMethodData)? klarna,
     TResult Function(PaymentMethodData paymentMethodData)? payPal,
-    TResult Function(PaymentMethodDataUsBank paymentMethodData)? usBankAccount,
+    TResult Function(PaymentMethodDataUsBank paymentMethodData,
+            PaymentMethodOptions? options)?
+        usBankAccount,
     required TResult orElse(),
   }) {
     if (usBankAccount != null) {
-      return usBankAccount(paymentMethodData);
+      return usBankAccount(paymentMethodData, options);
     }
     return orElse();
   }
@@ -8923,23 +9343,26 @@ class _$_PaymentMethodParamsUsBankAccount
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodParamsUsBankAccountToJson(
-      this,
-    );
+    return _$$_PaymentMethodParamsUsBankAccountToJson(this);
   }
 }
 
 abstract class _PaymentMethodParamsUsBankAccount
     implements PaymentMethodParams {
   const factory _PaymentMethodParamsUsBankAccount(
-          {required final PaymentMethodDataUsBank paymentMethodData}) =
+          {required final PaymentMethodDataUsBank paymentMethodData,
+          final PaymentMethodOptions? options}) =
       _$_PaymentMethodParamsUsBankAccount;
 
   factory _PaymentMethodParamsUsBankAccount.fromJson(
       Map<String, dynamic> json) = _$_PaymentMethodParamsUsBankAccount.fromJson;
 
   /// Paymentmethod data for this paymentmethod.
-  PaymentMethodDataUsBank get paymentMethodData;
+  PaymentMethodDataUsBank get paymentMethodData =>
+      throw _privateConstructorUsedError;
+
+  /// Payment options.
+  PaymentMethodOptions? get options => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_PaymentMethodParamsUsBankAccountCopyWith<
           _$_PaymentMethodParamsUsBankAccount>
@@ -9116,9 +9539,7 @@ class _$_PaymentMethodData implements _PaymentMethodData {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataToJson(this);
   }
 }
 
@@ -9133,11 +9554,11 @@ abstract class _PaymentMethodData implements PaymentMethodData {
   @override
 
   /// Billing information.
-  BillingDetails? get billingDetails;
+  BillingDetails? get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataCopyWith<_$_PaymentMethodData> get copyWith =>
@@ -9347,9 +9768,7 @@ class _$_PaymentMethodDataCardFromToken
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataCardFromTokenToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataCardFromTokenToJson(this);
   }
 }
 
@@ -9367,15 +9786,15 @@ abstract class _PaymentMethodDataCardFromToken
   @override
 
   /// Token.
-  String get token;
+  String get token => throw _privateConstructorUsedError;
   @override
 
   /// Billing information.
-  BillingDetails? get billingDetails;
+  BillingDetails? get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataCardFromTokenCopyWith<_$_PaymentMethodDataCardFromToken>
@@ -9611,9 +10030,7 @@ class _$_PaymentMethodDataCardFromMethod
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataCardFromMethodToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataCardFromMethodToJson(this);
   }
 }
 
@@ -9632,19 +10049,19 @@ abstract class _PaymentMethodDataCardFromMethod
   @override
 
   /// Payment method id.
-  String get paymentMethodId;
+  String get paymentMethodId => throw _privateConstructorUsedError;
   @override
 
   /// Cvc of the cart
-  String? get cvc;
+  String? get cvc => throw _privateConstructorUsedError;
   @override
 
   /// Billing information.
-  BillingDetails? get billingDetails;
+  BillingDetails? get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataCardFromMethodCopyWith<
@@ -9850,9 +10267,7 @@ class _$_PaymentMethodDataIdeal implements _PaymentMethodDataIdeal {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataIdealToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataIdealToJson(this);
   }
 }
 
@@ -9868,15 +10283,15 @@ abstract class _PaymentMethodDataIdeal implements PaymentMethodDataIdeal {
   @override
 
   /// The name of bank.
-  String? get bankName;
+  String? get bankName => throw _privateConstructorUsedError;
   @override
 
   /// Billing information.
-  BillingDetails? get billingDetails;
+  BillingDetails? get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataIdealCopyWith<_$_PaymentMethodDataIdeal> get copyWith =>
@@ -10093,9 +10508,7 @@ class _$_PaymentMethodDataAubecs implements _PaymentMethodDataAubecs {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataAubecsToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataAubecsToJson(this);
   }
 }
 
@@ -10111,15 +10524,15 @@ abstract class _PaymentMethodDataAubecs implements PaymentMethodDataAubecs {
   @override
 
   /// form input details
-  AubecsFormInputDetails get formDetails;
+  AubecsFormInputDetails get formDetails => throw _privateConstructorUsedError;
   @override
 
   /// Billing information.
-  BillingDetails? get billingDetails;
+  BillingDetails? get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataAubecsCopyWith<_$_PaymentMethodDataAubecs>
@@ -10326,9 +10739,7 @@ class _$_PaymentMethodDataFpx implements _PaymentMethodDataFpx {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataFpxToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataFpxToJson(this);
   }
 }
 
@@ -10344,15 +10755,15 @@ abstract class _PaymentMethodDataFpx implements PaymentMethodDataFpx {
   @override
 
   /// When set to true you can test offline payment.
-  bool get testOfflineBank;
+  bool get testOfflineBank => throw _privateConstructorUsedError;
   @override
 
   /// Billing information.
-  BillingDetails? get billingDetails;
+  BillingDetails? get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataFpxCopyWith<_$_PaymentMethodDataFpx> get copyWith =>
@@ -10558,9 +10969,7 @@ class _$_PaymentMethodDataSofort implements _PaymentMethodDataSofort {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataSofortToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataSofortToJson(this);
   }
 }
 
@@ -10576,15 +10985,15 @@ abstract class _PaymentMethodDataSofort implements PaymentMethodDataSofort {
   @override
 
   /// Country of the accountholder
-  String get country;
+  String get country => throw _privateConstructorUsedError;
   @override
 
   /// Billing information.
-  BillingDetails? get billingDetails;
+  BillingDetails? get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataSofortCopyWith<_$_PaymentMethodDataSofort>
@@ -10789,9 +11198,7 @@ class _$_PaymentMethodDataSepa implements _PaymentMethodDataSepa {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataSepaToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataSepaToJson(this);
   }
 }
 
@@ -10807,15 +11214,15 @@ abstract class _PaymentMethodDataSepa implements PaymentMethodDataSepa {
   @override
 
   /// Iban number of the accountholder
-  String get iban;
+  String get iban => throw _privateConstructorUsedError;
   @override
 
   /// Billing information.
-  BillingDetails? get billingDetails;
+  BillingDetails? get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataSepaCopyWith<_$_PaymentMethodDataSepa> get copyWith =>
@@ -10993,9 +11400,7 @@ class _$_PaymentMethodDataAfterPay implements _PaymentMethodDataAfterPay {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataAfterPayToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataAfterPayToJson(this);
   }
 }
 
@@ -11010,11 +11415,11 @@ abstract class _PaymentMethodDataAfterPay implements PaymentMethodDataAfterPay {
   @override
 
   /// Billing information.
-  BillingDetails get billingDetails;
+  BillingDetails get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataAfterPayCopyWith<_$_PaymentMethodDataAfterPay>
@@ -11295,9 +11700,7 @@ class _$_PaymentMethodDataUsBank implements _PaymentMethodDataUsBank {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodDataUsBankToJson(
-      this,
-    );
+    return _$$_PaymentMethodDataUsBankToJson(this);
   }
 }
 
@@ -11316,28 +11719,29 @@ abstract class _PaymentMethodDataUsBank implements PaymentMethodDataUsBank {
   @override
 
   /// The account number of the bank account.
-  String? get accountNumber;
+  String? get accountNumber => throw _privateConstructorUsedError;
   @override
 
   ///The routing number, sort code, or other country-appropriate institution
   ///number for the bank account.
-  String? get routingNumber;
+  String? get routingNumber => throw _privateConstructorUsedError;
   @override
 
   /// The bank account type of the holder
-  BankAccountHolderType? get accountHolderType;
+  BankAccountHolderType? get accountHolderType =>
+      throw _privateConstructorUsedError;
   @override
 
   /// The account type
-  UsBankAccountType? get accountType;
+  UsBankAccountType? get accountType => throw _privateConstructorUsedError;
   @override
 
   /// Billing information.
-  BillingDetails? get billingDetails;
+  BillingDetails? get billingDetails => throw _privateConstructorUsedError;
   @override
 
   /// Shipping details
-  ShippingDetails? get shippingDetails;
+  ShippingDetails? get shippingDetails => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodDataUsBankCopyWith<_$_PaymentMethodDataUsBank>
@@ -11464,9 +11868,7 @@ class _$_PaymentMethodOptions implements _PaymentMethodOptions {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PaymentMethodOptionsToJson(
-      this,
-    );
+    return _$$_PaymentMethodOptionsToJson(this);
   }
 }
 
@@ -11481,7 +11883,8 @@ abstract class _PaymentMethodOptions implements PaymentMethodOptions {
   @override
 
   /// Indicates whether or not you want to reuse this method for future payments.
-  PaymentIntentsFutureUsage? get setupFutureUsage;
+  PaymentIntentsFutureUsage? get setupFutureUsage =>
+      throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PaymentMethodOptionsCopyWith<_$_PaymentMethodOptions> get copyWith =>

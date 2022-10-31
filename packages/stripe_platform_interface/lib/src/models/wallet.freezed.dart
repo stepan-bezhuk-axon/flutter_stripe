@@ -166,11 +166,11 @@ abstract class _AddToWalletResult implements AddToWalletResult {
   @override
 
   /// Whether or not the card can be added to the wallet
-  bool get canAddToWallet;
+  bool get canAddToWallet => throw _privateConstructorUsedError;
   @override
 
   /// additional details from the add to wallet request
-  AddToWalletDetails? get details;
+  AddToWalletDetails? get details => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_AddToWalletResultCopyWith<_$_AddToWalletResult> get copyWith =>
@@ -314,9 +314,7 @@ class _$_AddToWalletDetails implements _AddToWalletDetails {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AddToWalletDetailsToJson(
-      this,
-    );
+    return _$$_AddToWalletDetailsToJson(this);
   }
 }
 
@@ -331,11 +329,11 @@ abstract class _AddToWalletDetails implements AddToWalletDetails {
   @override
 
   /// The status of the can add to wallet request in case it failed.
-  CanAddToWalletErrorStatus? get status;
+  CanAddToWalletErrorStatus? get status => throw _privateConstructorUsedError;
   @override
 
   /// The card token
-  String? get token;
+  String? get token => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_AddToWalletDetailsCopyWith<_$_AddToWalletDetails> get copyWith =>

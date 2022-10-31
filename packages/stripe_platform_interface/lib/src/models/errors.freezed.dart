@@ -156,9 +156,7 @@ class _$_StripeErrorGeneric<T> implements _StripeErrorGeneric<T> {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_StripeErrorGenericToJson<T>(
-      this,
-    );
+    return _$$_StripeErrorGenericToJson(this);
   }
 }
 
@@ -172,10 +170,10 @@ abstract class _StripeErrorGeneric<T> implements StripeError<T> {
       _$_StripeErrorGeneric<T>.fromJson;
 
   @override
-  String get message;
+  String get message => throw _privateConstructorUsedError;
   @override
   @JsonKey(fromJson: _dataFromJson, toJson: _dataToJson)
-  T get code;
+  T get code => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_StripeErrorGenericCopyWith<T, _$_StripeErrorGeneric<T>> get copyWith =>
@@ -310,9 +308,7 @@ class _$_StripeException implements _StripeException {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_StripeExceptionToJson(
-      this,
-    );
+    return _$$_StripeExceptionToJson(this);
   }
 }
 
@@ -326,7 +322,7 @@ abstract class _StripeException implements StripeException {
   @override
 
   /// error details
-  LocalizedErrorMessage get error;
+  LocalizedErrorMessage get error => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_StripeExceptionCopyWith<_$_StripeException> get copyWith =>
@@ -570,9 +566,7 @@ class _$_LocalizedErrorMessage implements _LocalizedErrorMessage {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LocalizedErrorMessageToJson(
-      this,
-    );
+    return _$$_LocalizedErrorMessageToJson(this);
   }
 }
 
@@ -591,27 +585,27 @@ abstract class _LocalizedErrorMessage implements LocalizedErrorMessage {
   @override
 
   /// The error code for example Cancelled
-  FailureCode get code;
+  FailureCode get code => throw _privateConstructorUsedError;
   @override
 
   /// Localized error message if any
-  String? get localizedMessage;
+  String? get localizedMessage => throw _privateConstructorUsedError;
   @override
 
   /// Generic untranslated error message.
-  String? get message;
+  String? get message => throw _privateConstructorUsedError;
   @override
 
   /// Stripe error code
-  String? get stripeErrorCode;
+  String? get stripeErrorCode => throw _privateConstructorUsedError;
   @override
 
   /// Code in case payment is declined
-  String? get declineCode;
+  String? get declineCode => throw _privateConstructorUsedError;
   @override
 
   /// Error type
-  String? get type;
+  String? get type => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_LocalizedErrorMessageCopyWith<_$_LocalizedErrorMessage> get copyWith =>

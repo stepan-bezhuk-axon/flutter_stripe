@@ -403,9 +403,7 @@ class _$_SetupIntent implements _SetupIntent {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_SetupIntentToJson(
-      this,
-    );
+    return _$$_SetupIntentToJson(this);
   }
 }
 
@@ -429,50 +427,51 @@ abstract class _SetupIntent implements SetupIntent {
   @override
 
   /// Unique identifier.
-  String get id;
+  String get id => throw _privateConstructorUsedError;
   @override
 
   /// Status of the intent.
   ///
   /// See https://stripe.com/docs/payments/intents#intent-statuses.
-  String get status;
+  String get status => throw _privateConstructorUsedError;
   @override
 
   /// Determines whether the intent is in live mode or in test mode.
-  bool get livemode;
+  bool get livemode => throw _privateConstructorUsedError;
   @override
 
   /// The client is secret is used for handling the payment from the Client side.
-  String get clientSecret;
+  String get clientSecret => throw _privateConstructorUsedError;
   @override
 
   /// Id of the payment method used in this intent.
-  String get paymentMethodId;
+  String get paymentMethodId => throw _privateConstructorUsedError;
   @override
 
   /// Indicates how the intent is used in the future.
-  String get usage;
+  String get usage => throw _privateConstructorUsedError;
   @override
 
   /// List of payment method types associated with this intent.
-  List<PaymentMethodType> get paymentMethodTypes;
+  List<PaymentMethodType> get paymentMethodTypes =>
+      throw _privateConstructorUsedError;
   @override
 
   /// Localized description that provides additional context to users.
-  String? get description;
+  String? get description => throw _privateConstructorUsedError;
   @override
 
   /// Timestamp since epoch that represents the time the intent is created.
-  String? get created;
+  String? get created => throw _privateConstructorUsedError;
   @override
 
   /// Error encountered since last configmration.
-  LastSetupError? get lastSetupError;
+  LastSetupError? get lastSetupError => throw _privateConstructorUsedError;
   @override
 
   /// Additional action that needs to be taken in order to complete a payment
   /// using the provided resource.
-  NextAction? get nextAction;
+  NextAction? get nextAction => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_SetupIntentCopyWith<_$_SetupIntent> get copyWith =>
@@ -616,9 +615,7 @@ class _$_LastSetupError implements _LastSetupError {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_LastSetupErrorToJson(
-      this,
-    );
+    return _$$_LastSetupErrorToJson(this);
   }
 }
 
@@ -633,11 +630,11 @@ abstract class _LastSetupError implements LastSetupError {
   @override
 
   /// Code.
-  String get code;
+  String get code => throw _privateConstructorUsedError;
   @override
 
   /// Message.
-  String get message;
+  String get message => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_LastSetupErrorCopyWith<_$_LastSetupError> get copyWith =>

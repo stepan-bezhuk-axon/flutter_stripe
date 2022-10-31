@@ -157,9 +157,6 @@ void main() {
               'secret',
               const PaymentMethodParams.card(
                 paymentMethodData: PaymentMethodData(),
-              ),
-            const  PaymentMethodOptions(
-                setupFutureUsage: PaymentIntentsFutureUsage.OffSession,
               ));
         });
 
@@ -188,7 +185,6 @@ void main() {
               const PaymentMethodParams.card(
                 paymentMethodData: PaymentMethodData(),
               ),
-              null,
             ),
             throwsA(const TypeMatcher<StripeException>()),
           );

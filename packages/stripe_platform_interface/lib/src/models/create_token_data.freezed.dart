@@ -300,9 +300,7 @@ class _$_CreateTokenParamsLegacy implements _CreateTokenParamsLegacy {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CreateTokenParamsLegacyToJson(
-      this,
-    );
+    return _$$_CreateTokenParamsLegacyToJson(this);
   }
 }
 
@@ -316,13 +314,13 @@ abstract class _CreateTokenParamsLegacy implements CreateTokenParams {
       _$_CreateTokenParamsLegacy.fromJson;
 
   /// Type of token.
-  TokenType get type;
+  TokenType get type => throw _privateConstructorUsedError;
 
   /// Name of the card holder
-  String? get name;
+  String? get name => throw _privateConstructorUsedError;
 
   /// Additional address details
-  Address? get address;
+  Address? get address => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_CreateTokenParamsLegacyCopyWith<_$_CreateTokenParamsLegacy>
       get copyWith => throw _privateConstructorUsedError;
@@ -488,9 +486,7 @@ class _$_CreateTokenParamsCard implements _CreateTokenParamsCard {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CreateTokenParamsCardToJson(
-      this,
-    );
+    return _$$_CreateTokenParamsCardToJson(this);
   }
 }
 
@@ -501,7 +497,7 @@ abstract class _CreateTokenParamsCard implements CreateTokenParams {
   factory _CreateTokenParamsCard.fromJson(Map<String, dynamic> json) =
       _$_CreateTokenParamsCard.fromJson;
 
-  CardTokenParams get params;
+  CardTokenParams get params => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_CreateTokenParamsCardCopyWith<_$_CreateTokenParamsCard> get copyWith =>
       throw _privateConstructorUsedError;
@@ -670,9 +666,7 @@ class _$_CreateTokenParamsBankAccount implements _CreateTokenParamsBankAccount {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CreateTokenParamsBankAccountToJson(
-      this,
-    );
+    return _$$_CreateTokenParamsBankAccountToJson(this);
   }
 }
 
@@ -684,7 +678,7 @@ abstract class _CreateTokenParamsBankAccount implements CreateTokenParams {
   factory _CreateTokenParamsBankAccount.fromJson(Map<String, dynamic> json) =
       _$_CreateTokenParamsBankAccount.fromJson;
 
-  BankAccountTokenParams get params;
+  BankAccountTokenParams get params => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_CreateTokenParamsBankAccountCopyWith<_$_CreateTokenParamsBankAccount>
       get copyWith => throw _privateConstructorUsedError;
@@ -849,9 +843,7 @@ class _$_CreateTokenParamsPII implements _CreateTokenParamsPII {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CreateTokenParamsPIIToJson(
-      this,
-    );
+    return _$$_CreateTokenParamsPIIToJson(this);
   }
 }
 
@@ -862,7 +854,7 @@ abstract class _CreateTokenParamsPII implements CreateTokenParams {
   factory _CreateTokenParamsPII.fromJson(Map<String, dynamic> json) =
       _$_CreateTokenParamsPII.fromJson;
 
-  PIITokenParams get params;
+  PIITokenParams get params => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
   _$$_CreateTokenParamsPIICopyWith<_$_CreateTokenParamsPII> get copyWith =>
       throw _privateConstructorUsedError;
@@ -1060,9 +1052,7 @@ class _$_CardTokenParams implements _CardTokenParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CardTokenParamsToJson(
-      this,
-    );
+    return _$$_CardTokenParamsToJson(this);
   }
 }
 
@@ -1079,19 +1069,19 @@ abstract class _CardTokenParams implements CardTokenParams {
   @override
 
   /// Type of token.
-  TokenType get type;
+  TokenType get type => throw _privateConstructorUsedError;
   @override
 
   /// Name of the card holder
-  String? get name;
+  String? get name => throw _privateConstructorUsedError;
   @override
 
   /// Additional address details
-  Address? get address;
+  Address? get address => throw _privateConstructorUsedError;
   @override
 
   /// The three letter ISO 4217 code for the currency.
-  String? get currency;
+  String? get currency => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_CardTokenParamsCopyWith<_$_CardTokenParams> get copyWith =>
@@ -1237,9 +1227,7 @@ class _$_PIITokenParams implements _PIITokenParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_PIITokenParamsToJson(
-      this,
-    );
+    return _$$_PIITokenParamsToJson(this);
   }
 }
 
@@ -1254,11 +1242,11 @@ abstract class _PIITokenParams implements PIITokenParams {
   @override
 
   /// Type of token.
-  TokenType get type;
+  TokenType get type => throw _privateConstructorUsedError;
   @override
 
   /// The user's personal ID number
-  String get personalId;
+  String get personalId => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_PIITokenParamsCopyWith<_$_PIITokenParams> get copyWith =>
@@ -1526,9 +1514,7 @@ class _$_BankAccountTokenParams implements _BankAccountTokenParams {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BankAccountTokenParamsToJson(
-      this,
-    );
+    return _$$_BankAccountTokenParamsToJson(this);
   }
 }
 
@@ -1548,31 +1534,32 @@ abstract class _BankAccountTokenParams implements BankAccountTokenParams {
   @override
 
   /// Type of token.
-  TokenType get type;
+  TokenType get type => throw _privateConstructorUsedError;
   @override
 
   /// unique number of the account.
-  String get accountNumber;
+  String get accountNumber => throw _privateConstructorUsedError;
   @override
 
   /// 2 letter code of the country where the account is located
-  String get country;
+  String get country => throw _privateConstructorUsedError;
   @override
 
   /// The three letter ISO 4217 code for the currency.
-  String get currency;
+  String get currency => throw _privateConstructorUsedError;
   @override
 
   /// Full name of the account holder
-  String? get accountHolderName;
+  String? get accountHolderName => throw _privateConstructorUsedError;
   @override
 
   /// Entity that is holder of the account.
-  BankAccountHolderType? get accountHolderType;
+  BankAccountHolderType? get accountHolderType =>
+      throw _privateConstructorUsedError;
   @override
 
   /// The routing number of the bank account (e.g. needer for US accounts).
-  String? get routingNumber;
+  String? get routingNumber => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_BankAccountTokenParamsCopyWith<_$_BankAccountTokenParams> get copyWith =>
@@ -1839,9 +1826,7 @@ class _$_TokenData implements _TokenData {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_TokenDataToJson(
-      this,
-    );
+    return _$$_TokenDataToJson(this);
   }
 }
 
@@ -1860,28 +1845,28 @@ abstract class _TokenData implements TokenData {
   @override
 
   /// Unique identifier of the token
-  String get id;
+  String get id => throw _privateConstructorUsedError;
   @override
 
   /// Timestamp when token was created
   @JsonKey(name: 'created')
-  String get createdDateTime;
+  String get createdDateTime => throw _privateConstructorUsedError;
   @override
 
   /// Type of the token
-  TokenType get type;
+  TokenType get type => throw _privateConstructorUsedError;
   @override
 
   /// Whether or not the object exists in livemode
-  bool get livemode;
+  bool get livemode => throw _privateConstructorUsedError;
   @override
 
   /// Bank account data
-  BankAccount? get bankAccount;
+  BankAccount? get bankAccount => throw _privateConstructorUsedError;
   @override
 
   /// Card data
-  CardData? get card;
+  CardData? get card => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_TokenDataCopyWith<_$_TokenData> get copyWith =>
@@ -2219,9 +2204,7 @@ class _$_CardData implements _CardData {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CardDataToJson(
-      this,
-    );
+    return _$$_CardDataToJson(this);
   }
 }
 
@@ -2243,43 +2226,43 @@ abstract class _CardData implements CardData {
   @override
 
   /// Unique identifier
-  String? get id;
+  String? get id => throw _privateConstructorUsedError;
   @override
 
   /// The brand associated to the card e.g. (visa, amex).
-  String get brand;
+  String get brand => throw _privateConstructorUsedError;
   @override
 
   /// Two letter iso code.
-  String? get country;
+  String? get country => throw _privateConstructorUsedError;
   @override
 
   /// The three letter ISO 4217 code for the currency.
-  String? get currency;
+  String? get currency => throw _privateConstructorUsedError;
   @override
 
   /// four digit number representing the year of expiry of the card.
-  int? get expYear;
+  int? get expYear => throw _privateConstructorUsedError;
   @override
 
   /// two digit number representing the month of expire of the card.
-  int? get expMonth;
+  int? get expMonth => throw _privateConstructorUsedError;
   @override
 
   /// Fullname of the cardholder
-  String? get name;
+  String? get name => throw _privateConstructorUsedError;
   @override
 
   /// card funding type e.g. (credit, debit).
-  String? get funding;
+  String? get funding => throw _privateConstructorUsedError;
   @override
 
   /// last four digits of the card.
-  String? get last4;
+  String? get last4 => throw _privateConstructorUsedError;
   @override
 
   /// Address of the cardholder
-  Address? get address;
+  Address? get address => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_CardDataCopyWith<_$_CardData> get copyWith =>
@@ -2611,9 +2594,7 @@ class _$_BankAccount implements _BankAccount {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BankAccountToJson(
-      this,
-    );
+    return _$$_BankAccountToJson(this);
   }
 }
 
@@ -2636,45 +2617,46 @@ abstract class _BankAccount implements BankAccount {
   @override
 
   /// Unique id for this bank account
-  String get id;
+  String get id => throw _privateConstructorUsedError;
   @override
 
   /// Entity that is holder of the account.
-  BankAccountHolderType? get accountHolderType;
+  BankAccountHolderType? get accountHolderType =>
+      throw _privateConstructorUsedError;
   @override
 
   /// Name of the bank where the account is registered.
-  String? get bankName;
+  String? get bankName => throw _privateConstructorUsedError;
   @override
 
   /// Full name of the account holder
-  String? get accountHolderName;
+  String? get accountHolderName => throw _privateConstructorUsedError;
   @override
 
   /// 2 letter code of the country where the account is located
-  String? get country;
+  String? get country => throw _privateConstructorUsedError;
   @override
 
   /// The three letter ISO 4217 code for the currency.
-  String? get currency;
+  String? get currency => throw _privateConstructorUsedError;
   @override
 
   /// The routing number of the bank account (e.g. needer for US accounts).
-  String? get routingNumber;
+  String? get routingNumber => throw _privateConstructorUsedError;
   @override
 
   /// Status of the bank account.
-  BankAccountStatus? get status;
+  BankAccountStatus? get status => throw _privateConstructorUsedError;
   @override
 
   /// Uniquely identifies the particular bank account.
   ///
   /// You can use this to check whether or not two bank accounts are the same.
-  String? get fingerprint;
+  String? get fingerprint => throw _privateConstructorUsedError;
   @override
 
   /// Last four numbers of the bank account number
-  String? get last4;
+  String? get last4 => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_BankAccountCopyWith<_$_BankAccount> get copyWith =>

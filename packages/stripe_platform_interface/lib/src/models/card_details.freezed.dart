@@ -182,9 +182,7 @@ class _$_CardDetailsConstructor extends _CardDetailsConstructor {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_CardDetailsConstructorToJson(
-      this,
-    );
+    return _$$_CardDetailsConstructorToJson(this);
   }
 }
 
@@ -200,13 +198,13 @@ abstract class _CardDetailsConstructor extends CardDetails {
       _$_CardDetailsConstructor.fromJson;
 
   @override
-  String? get number;
+  String? get number => throw _privateConstructorUsedError;
   @override
-  int? get expirationYear;
+  int? get expirationYear => throw _privateConstructorUsedError;
   @override
-  int? get expirationMonth;
+  int? get expirationMonth => throw _privateConstructorUsedError;
   @override
-  String? get cvc;
+  String? get cvc => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_CardDetailsConstructorCopyWith<_$_CardDetailsConstructor> get copyWith =>

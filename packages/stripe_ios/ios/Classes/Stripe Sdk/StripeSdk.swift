@@ -454,7 +454,7 @@ class StripeSdk: RCTEventEmitter, STPApplePayContextDelegate, STPBankSelectionVi
     }
 
     @objc(handleURLCallback:resolver:rejecter:)
-    func handleURLCallback(url: String?, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {    
+    func handleURLCallback(url: String?, resolver resolve: @escaping RCTPromiseResolveBlock, rejecter reject: @escaping RCTPromiseRejectBlock) {
       guard let url = url else {
         resolve(false)
         return;
@@ -684,15 +684,14 @@ class StripeSdk: RCTEventEmitter, STPApplePayContextDelegate, STPBankSelectionVi
         }
     }
 
-    @objc(handleNextAction:returnURL:resolver:rejecter:)
+    @objc(handleNextAction:resolver:rejecter:)
     func handleNextAction(
         paymentIntentClientSecret: String,
-        returnURL: String?,
         resolver resolve: @escaping RCTPromiseResolveBlock,
         rejecter reject: @escaping RCTPromiseRejectBlock
     ){
         let paymentHandler = STPPaymentHandler.shared()
-        paymentHandler.handleNextAction(forPayment: paymentIntentClientSecret, with: self, returnURL: returnURL) { status, paymentIntent, handleActionError in
+        paymentHandler.handleNextAction(forPayment: paymentIntentClientSecret, with: self, returnURL: nil) { status, paymentIntent, handleActionError in
             switch (status) {
             case .failed:
                 resolve(Errors.createError(ErrorType.Failed, handleActionError))

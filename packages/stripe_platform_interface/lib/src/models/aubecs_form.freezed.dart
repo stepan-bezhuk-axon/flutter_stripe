@@ -306,9 +306,7 @@ class _$_AubecsFormStyle implements _AubecsFormStyle {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AubecsFormStyleToJson(
-      this,
-    );
+    return _$$_AubecsFormStyleToJson(this);
   }
 }
 
@@ -333,33 +331,33 @@ abstract class _AubecsFormStyle implements AubecsFormStyle {
 
   @override
   @JsonKey(toJson: ColorKey.toJson, fromJson: ColorKey.fromJson)
-  Color? get textColor;
+  Color? get textColor => throw _privateConstructorUsedError;
   @override
   @JsonKey(toJson: ColorKey.toJson, fromJson: ColorKey.fromJson)
-  Color? get textErrorColor;
+  Color? get textErrorColor => throw _privateConstructorUsedError;
   @override
   @JsonKey(toJson: ColorKey.toJson, fromJson: ColorKey.fromJson)
-  Color? get placeholderColor;
+  Color? get placeholderColor => throw _privateConstructorUsedError;
   @override
 
   /// Size of the font in the input form.
-  int? get fontSize;
+  int? get fontSize => throw _privateConstructorUsedError;
   @override
 
   /// Borderwith of the form
   /// Only available for Android
-  int? get borderWidth;
+  int? get borderWidth => throw _privateConstructorUsedError;
   @override
   @JsonKey(toJson: ColorKey.toJson, fromJson: ColorKey.fromJson)
-  Color? get backgroundColor;
+  Color? get backgroundColor => throw _privateConstructorUsedError;
   @override
   @JsonKey(toJson: ColorKey.toJson, fromJson: ColorKey.fromJson)
-  Color? get borderColor;
+  Color? get borderColor => throw _privateConstructorUsedError;
   @override
 
   /// Borderadius of the form
   /// Only available for Android
-  int? get borderRadius;
+  int? get borderRadius => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_AubecsFormStyleCopyWith<_$_AubecsFormStyle> get copyWith =>
@@ -548,9 +546,7 @@ class _$_AubecsFormInputDetails implements _AubecsFormInputDetails {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AubecsFormInputDetailsToJson(
-      this,
-    );
+    return _$$_AubecsFormInputDetailsToJson(this);
   }
 }
 
@@ -567,19 +563,19 @@ abstract class _AubecsFormInputDetails implements AubecsFormInputDetails {
   @override
 
   /// Six digit identifier to identify the branch of an financial institution.
-  String? get bsbNumber;
+  String? get bsbNumber => throw _privateConstructorUsedError;
   @override
 
   /// The name of the accountholder.
-  String? get name;
+  String? get name => throw _privateConstructorUsedError;
   @override
 
   /// The account number.
-  String? get accountNumber;
+  String? get accountNumber => throw _privateConstructorUsedError;
   @override
 
   /// Email of the accountholder.
-  String? get email;
+  String? get email => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_AubecsFormInputDetailsCopyWith<_$_AubecsFormInputDetails> get copyWith =>

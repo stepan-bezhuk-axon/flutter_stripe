@@ -150,9 +150,7 @@ class _$_FinancialConnectionSessionResult
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FinancialConnectionSessionResultToJson(
-      this,
-    );
+    return _$$_FinancialConnectionSessionResultToJson(this);
   }
 }
 
@@ -166,7 +164,7 @@ abstract class _FinancialConnectionSessionResult
       Map<String, dynamic> json) = _$_FinancialConnectionSessionResult.fromJson;
 
   @override
-  FinancialConnectionSession get session;
+  FinancialConnectionSession get session => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_FinancialConnectionSessionResultCopyWith<
@@ -342,9 +340,7 @@ class _$_FinancialConnectionTokenResult
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FinancialConnectionTokenResultToJson(
-      this,
-    );
+    return _$$_FinancialConnectionTokenResultToJson(this);
   }
 }
 
@@ -359,9 +355,10 @@ abstract class _FinancialConnectionTokenResult
       _$_FinancialConnectionTokenResult.fromJson;
 
   @override
-  FinancialConnectionSession get session;
+  FinancialConnectionSession get session => throw _privateConstructorUsedError;
   @override
-  FinancialConnectionBankAccountToken get token;
+  FinancialConnectionBankAccountToken get token =>
+      throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_FinancialConnectionTokenResultCopyWith<_$_FinancialConnectionTokenResult>
@@ -569,9 +566,7 @@ class _$_FinancialConnectionSession implements _FinancialConnectionSession {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FinancialConnectionSessionToJson(
-      this,
-    );
+    return _$$_FinancialConnectionSessionToJson(this);
   }
 }
 
@@ -590,19 +585,20 @@ abstract class _FinancialConnectionSession
   @override
 
   /// Unique id for this session
-  String get id;
+  String get id => throw _privateConstructorUsedError;
   @override
 
   /// The client secret of the session
-  String get clientSecret;
+  String get clientSecret => throw _privateConstructorUsedError;
   @override
 
   /// When `true` the object exists in livemode and when false the object exists in test mode.
-  bool get livemode;
+  bool get livemode => throw _privateConstructorUsedError;
   @override
 
   /// The accounts that were collected as part of this session
-  List<FinancialConnectionAccount> get accounts;
+  List<FinancialConnectionAccount> get accounts =>
+      throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_FinancialConnectionSessionCopyWith<_$_FinancialConnectionSession>
@@ -846,9 +842,7 @@ class _$_FinancialConnectionBankAccountToken
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FinancialConnectionBankAccountTokenToJson(
-      this,
-    );
+    return _$$_FinancialConnectionBankAccountTokenToJson(this);
   }
 }
 
@@ -868,23 +862,23 @@ abstract class _FinancialConnectionBankAccountToken
   @override
 
   /// Bamkaccount details
-  BankAccount? get bankAccount;
+  BankAccount? get bankAccount => throw _privateConstructorUsedError;
   @override
 
   /// When `true` the object exists in livemode and when false the object exists in test mode.
-  bool get livemode;
+  bool get livemode => throw _privateConstructorUsedError;
   @override
 
   /// Unique id for this token.
-  String? get id;
+  String? get id => throw _privateConstructorUsedError;
   @override
 
   /// whether or not this token has been used
-  bool get used;
+  bool get used => throw _privateConstructorUsedError;
   @override
 
   /// The Unix timestamp (in milliseconds) of the date this token was created
-  int? get created;
+  int? get created => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_FinancialConnectionBankAccountTokenCopyWith<
@@ -1339,9 +1333,7 @@ class _$_FinancialConnectionAccount implements _FinancialConnectionAccount {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_FinancialConnectionAccountToJson(
-      this,
-    );
+    return _$$_FinancialConnectionAccountToJson(this);
   }
 }
 
@@ -1369,55 +1361,57 @@ abstract class _FinancialConnectionAccount
   @override
 
   /// Unique id for this Financial connection account.
-  String get id;
+  String get id => throw _privateConstructorUsedError;
   @override
 
   /// Has the value true if the object exist in livemode.
-  bool get livemode;
+  bool get livemode => throw _privateConstructorUsedError;
   @override
 
   /// display name of the account.
-  String? get displayName;
+  String? get displayName => throw _privateConstructorUsedError;
   @override
 
   /// The current status of the account.
-  AccountStatus get status;
+  AccountStatus get status => throw _privateConstructorUsedError;
   @override
 
   /// The name of the financial institution.
-  String get institutionName;
+  String get institutionName => throw _privateConstructorUsedError;
   @override
 
   /// Last4 of the account number.
-  String? get last4;
+  String? get last4 => throw _privateConstructorUsedError;
   @override
 
   /// Unix timestamp in milliseconds of the date this account was created.
-  int get created;
+  int get created => throw _privateConstructorUsedError;
   @override
 
   /// The balance of the account
-  AccountBalance? get balance;
+  AccountBalance? get balance => throw _privateConstructorUsedError;
   @override
 
   /// The last balance refresh.
-  BalanceRefresh? get balanceRefresh;
+  BalanceRefresh? get balanceRefresh => throw _privateConstructorUsedError;
   @override
 
   /// The category of this account
-  AccountCategory get category;
+  AccountCategory get category => throw _privateConstructorUsedError;
   @override
 
   /// The subcategory of this account,
-  AccountSubcategory get subcategory;
+  AccountSubcategory get subcategory => throw _privateConstructorUsedError;
   @override
 
   /// Permissions requested for accounts collected during this session.
-  List<AccountPermission>? get permissions;
+  List<AccountPermission>? get permissions =>
+      throw _privateConstructorUsedError;
   @override
 
   /// Support payment method types for this account.
-  List<FinancialConnectionsPaymentMethodType> get supportedPaymentMethodTypes;
+  List<FinancialConnectionsPaymentMethodType> get supportedPaymentMethodTypes =>
+      throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_FinancialConnectionAccountCopyWith<_$_FinancialConnectionAccount>
@@ -1563,9 +1557,7 @@ class _$_BalanceRefresh implements _BalanceRefresh {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_BalanceRefreshToJson(
-      this,
-    );
+    return _$$_BalanceRefreshToJson(this);
   }
 }
 
@@ -1580,11 +1572,11 @@ abstract class _BalanceRefresh implements BalanceRefresh {
   @override
 
   /// Status of the balance refresh attempt
-  BalanceRefreshStatus get status;
+  BalanceRefreshStatus get status => throw _privateConstructorUsedError;
   @override
 
   /// Unix timestamp (in milliseconds) of the time of the last refresh attempt.
-  int get lastAttemptedAt;
+  int get lastAttemptedAt => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_BalanceRefreshCopyWith<_$_BalanceRefresh> get copyWith =>
@@ -1857,9 +1849,7 @@ class _$_AccountBalance implements _AccountBalance {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_AccountBalanceToJson(
-      this,
-    );
+    return _$$_AccountBalanceToJson(this);
   }
 }
 
@@ -1877,11 +1867,11 @@ abstract class _AccountBalance implements AccountBalance {
   @override
 
   /// Unix timestamp in milliseconds of time the external instition calculated this balance.
-  int get asOf;
+  int get asOf => throw _privateConstructorUsedError;
   @override
 
   /// The type of balance.
-  BalanceType get type;
+  BalanceType get type => throw _privateConstructorUsedError;
   @override
 
   /// The funds available to the account holder.
@@ -1889,21 +1879,21 @@ abstract class _AccountBalance implements AccountBalance {
   /// Typically this is the current balance less any holds.
   /// Each key is a three letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html) in lowercase.
   /// Each value is an integer amount. A positive amount indicates money owed to the account holder. A negative amount indicates money owed by the account holder.
-  Map<String, int>? get cash;
+  Map<String, int>? get cash => throw _privateConstructorUsedError;
   @override
 
   /// The credit that has been used by the account holder.
   ///
   /// Each key is a three letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html) in lowercase.
   /// Each value is a integer amount. A positive amount indicates money owed to the account holder. A negative amount indicates money owed by the account holder.
-  Map<String, int>? get credit;
+  Map<String, int>? get credit => throw _privateConstructorUsedError;
   @override
 
   /// The balances owed to (or by) the account holder.
   ///
   /// Each key is a three letter [ISO currency code](https://www.iso.org/iso-4217-currency-codes.html) in lowercase.
   /// Each value is a integer amount. A positive amount indicates money owed to the account holder. A negative amount indicates money owed by the account holder.
-  Map<String, int>? get current;
+  Map<String, int>? get current => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_AccountBalanceCopyWith<_$_AccountBalance> get copyWith =>
