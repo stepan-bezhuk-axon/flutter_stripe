@@ -21,8 +21,18 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  stripe_android: ^6.0.0
-  stripe_ios: ^6.0.0
+  stripe_android:
+    git:
+      url: https://github.com/stepan-bezhuk-axon/flutter_stripe.git
+      ref: fox-dev
+      patch: packages/stripe_android
+
+    stripe_ios:
+    git:
+      url: https://github.com/stepan-bezhuk-axon/flutter_stripe.git
+      ref: fox-dev
+      patch: packages/stripe_ios
+
   stripe_platform_interface: ^6.0.0
 dev_dependencies:
   flutter_test:
